@@ -1,0 +1,120 @@
+
+
+body {
+  background-color: rgb(255, 190, 220);
+}
+
+.nav {
+  color: rgb(156, 38, 79);
+  font-size: 25;
+  text-align: center;
+  margin-top: -43px;
+  margin-bottom: -10px;
+  letter-spacing: 2px;
+  background-image: url(border.png);
+  background-size: 100% 35px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+
+/*Links*/
+header a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Stencil Std, fantasy;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 2.35px;
+  font-variant: small-caps;
+}
+a:visited {
+  color: rgb(68, 7, 45);
+}
+a:hover {
+  background-color: rgba(90, 15, 62, .2);
+}
+a:active {
+  color: rgb(68, 7, 45);
+}
+
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: Stencil Std, fantasy;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+h2 {
+  color: rgb(156, 38, 79);
+  font-size: 20;
+  font-family:  Stencil Std, fantasy;
+  letter-spacing: 2px;
+  font-weight: 10;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body figcaption{
+  font-family: Didot;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+  
+main p {
+  font-family: Didot;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+
+hr {
+  border-color: rgb(0, 0, 0);
+  border-width: .1px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.navfoot {
+  color: rgb(156, 38, 79);
+  text-align: center;
+  letter-spacing: 1.7px;
+  font-family: Didot;
+}
+
+footer a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: Didot;
+  font-size: 10px;
+}
+
+footer p {
+  font-family: Didot;
+  font-size: 8px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+footer {
+  text-align: center;
+}
+
+
