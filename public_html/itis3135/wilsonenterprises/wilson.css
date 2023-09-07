@@ -1,0 +1,129 @@
+
+
+body {
+    background-color: #baddf1e7;
+  }
+  
+.nav {
+    color: rgb(0, 0, 0);
+    background-color: rgba(110, 171, 240, 0.301);
+    font-size: 16px;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 2%;
+    border-bottom-style: ridge;
+    border-top-style: ridge;
+    border-right-style: dotted;
+    border-left-style: dotted;
+    border-width: 1.5px;
+    border-color: rgb(8, 39, 94);
+    border-radius: 20%;
+    padding: 1.25%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+  
+  /*Links*/
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+}
+a:visited {
+    color: rgb(8, 39, 94);
+}
+a:hover {
+    background-color: rgba(20, 61, 132, 0.267);
+}
+a:active {
+    color: rgb(43, 51, 62);
+}
+  
+header p {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family:  Stencil Std, fantasy;
+    text-align: center;
+    font-weight: 500;
+    margin-top: -34px;
+}
+  
+  
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: Stencil Std, fantasy;
+    font-size: 45px;
+    font-variant: small-caps;
+    text-align: center;
+}
+  
+h2 {
+    color: rgb(8, 39, 94);
+    font-size: 25px;
+    font-family:  Stencil Std, fantasy;
+    font-weight: 100;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+  
+body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+body figcaption{
+    font-family: Didot;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+    
+main p {
+    font-family: Didot;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: -12px;
+}
+  
+  
+hr {
+    border-color: rgb(0, 0, 0);
+    border-width: .5px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+  
+.navfoot {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Didot;
+    font-size: 12px;
+}
+  
+footer a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: Didot;
+    font-size: 12px;
+}
+  
+footer p {
+    font-family: Didot;
+    font-size: 8px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+  
+footer {
+    text-align: center;
+}
+  
+  
+  
