@@ -120,12 +120,12 @@ footer a{
   font-size: 10px;
 }
 
-footer p {
+footer p, .footercompany {
   font-family: Didot;
-  font-size: 8px;
+  font-size: 9px;
   color: rgb(0, 0, 0);
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: .4px;
 }
 
 footer {
