@@ -71,6 +71,13 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 900px;
+  margin-bottom: 1%;
+}
+
 body img {
   display: block;
   margin-left: auto;
@@ -97,6 +104,13 @@ main p {
   margin-left: 5%;
 }
 
+main {
+  font-family: Didot;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-right: 5%;
+  margin-left: 5%;
+}
 
 hr {
   border-color: rgb(0, 0, 0);
@@ -131,5 +145,41 @@ footer p, .footercompany {
 footer {
   text-align: center;
 }
+
+/*Tables*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1.2px solid #000000;
+  font-family: Didot;
+  font-size: 16px;
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  background-color: rgb(181, 72, 110);
+  color: rgb(0, 0, 0);
+  font-family: Didot;
+  font-size: 18px;
+}
+
+.category {
+  font-weight: bold;
+  background-color:rgb(228, 157, 190);
+}
+
+
+/* Alternate row colors */
+tr:nth-child(odd) {
+  background-color: rgba(255, 225, 236, 0.373);
+}
+
+
+
+
 
 
