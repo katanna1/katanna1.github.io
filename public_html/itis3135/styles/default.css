@@ -178,6 +178,98 @@ tr:nth-child(odd) {
   background-color: rgba(255, 225, 236, 0.373);
 }
 
+textarea {
+  font-family: Didot;
+  height:70px; 
+  width: 250px;
+  resize: vertical; 
+  font-size: 14px;
+}
+
+.feedback {
+  font-family: Didot;
+  height: 150px; 
+  width: 100%;
+  resize: vertical; 
+  font-size: 14px;
+}
+
+/* Optionally, add some margin or padding for spacing */
+label {
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.submit-button{
+  background-color: rgb(188, 35, 89);
+  border-color: black;
+  height: 30px; 
+  width: 80px;
+  font-size: 18px;
+  font-family:  Stencil Std, fantasy;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color:  rgb(121, 19, 55); 
+}
+
+.reset-button{
+  background-color: rgb(225, 214, 218);
+  border-color: black;
+  height: 30px; 
+  width: 80px;
+  font-size: 18px;
+  font-family:  Stencil Std, fantasy;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.reset-button:hover {
+  background-color: #979797; 
+}
+
+form {
+  font-family: Didot;
+  font-size: 16px;
+  margin-right: 2%;
+  margin-left: 2%;
+  background-color: rgba(156, 38, 79, 0.199);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+input::placeholder {
+  font-family: Didot;
+  font-size: 14px;
+}
+
+form label {
+  font-family: Didot;
+  font-size: 16px;
+}
+
+
+select {
+  font-family: Didot;
+  font-size: 16px;
+  height: 26px; 
+  width: 180px;
+}
+
+h4{
+  font-size: 18px;
+  font-family:  fantasy;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-left: -5%;
+  margin-bottom: 3%;
+  text-decoration: underline 2px;
+}
+
+
 
 
 
