@@ -5,18 +5,18 @@ body {
 }
 
 .nav {
-  color: rgb(156, 38, 79);
+  color:  rgb(188, 35, 89);
   font-size: 25;
+  border: 2.5px solid black;
+  border-radius: 20%;
   text-align: center;
-  margin-top: -43px;
-  margin-bottom: -10px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: -3.5%;
+  margin-bottom: -2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  padding: .5%;
   letter-spacing: 2px;
-  background-image: url(border.png);
-  background-size: 100% 55%;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  background-color:  rgba(255, 225, 236, 0.373);
 }
 
 
@@ -34,7 +34,7 @@ a:visited {
   color: rgb(68, 7, 45);
 }
 a:hover {
-  background-color: rgba(90, 15, 62, .2);
+  background-color: rgba(203, 123, 160, 0.592);
 }
 a:active {
   color: rgb(68, 7, 45);
@@ -44,10 +44,10 @@ header p {
   color: rgb(68, 7, 45);
   font-family: Stencil Std, fantasy;
   letter-spacing: 2px;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
-  margin-top: -28px;
-  margin-bottom: 35px;
+  margin-top: -5%;
+  margin-bottom: 5%;
   text-align: center;
 }
 
@@ -63,17 +63,17 @@ h1 {
 
 h2 {
   color: rgb(156, 38, 79);
-  font-size: 20;
+  font-size: 34px;
   font-family:  Stencil Std, fantasy;
   letter-spacing: 2px;
-  font-weight: 10;
-  margin-bottom: 1px;
+  margin-bottom: -3%;
   text-align: center;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.842); 
 }
 
 h3 {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900px;
   margin-bottom: 1%;
 }
@@ -194,14 +194,13 @@ textarea {
   font-size: 14px;
 }
 
-/* Optionally, add some margin or padding for spacing */
 label {
-  margin-top: 10px; /* Adjust the margin as needed */
+  margin-top: 10px; 
 }
 
 .submit-button{
   background-color: rgb(188, 35, 89);
-  border-color: black;
+  border-color: rgb(121, 19, 55);
   height: 30px; 
   width: 80px;
   font-size: 18px;
@@ -216,7 +215,7 @@ label {
 
 .reset-button{
   background-color: rgb(225, 214, 218);
-  border-color: black;
+  border-color: #979797;
   height: 30px; 
   width: 80px;
   font-size: 18px;
