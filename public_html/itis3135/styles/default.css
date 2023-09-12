@@ -7,14 +7,15 @@ body {
 .nav {
   color:  rgb(188, 35, 89);
   font-size: 25;
-  border: 2.5px solid black;
-  border-radius: 20%;
+  border: 2.8px solid black;
+  border-radius: 25%;
+  border-right: 5px dotted black;
+  border-left: 5px dotted black;
   text-align: center;
-  margin-top: -3.5%;
-  margin-bottom: -2%;
+  margin-top: -15px;
   margin-right: 1%;
   margin-left: 1%;
-  padding: .5%;
+  padding: .9%;
   letter-spacing: 2px;
   background-color:  rgba(255, 225, 236, 0.373);
 }
@@ -27,7 +28,7 @@ header a{
   font-family: Stencil Std, fantasy;
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: 2.35px;
+  letter-spacing: 2.15px;
   font-variant: small-caps;
 }
 a:visited {
@@ -46,8 +47,7 @@ header p {
   letter-spacing: 2px;
   font-size: 22px;
   font-weight: 500;
-  margin-top: -5%;
-  margin-bottom: 5%;
+  margin-top: -28px;
   text-align: center;
 }
 
@@ -63,12 +63,12 @@ h1 {
 
 h2 {
   color: rgb(156, 38, 79);
-  font-size: 34px;
+  font-size: 38px;
+  margin-top: 18px;
   font-family:  Stencil Std, fantasy;
-  letter-spacing: 2px;
-  margin-bottom: -3%;
-  text-align: center;
-  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.842); 
+  letter-spacing: 2.6px;
+  text-align: left;
+  text-shadow: .5px .5px .5px rgb(0, 0, 0); 
 }
 
 h3 {
@@ -76,6 +76,7 @@ h3 {
   font-size: 22px;
   font-weight: 900px;
   margin-bottom: 1%;
+  margin-top: -20px;
 }
 
 body img {
@@ -112,7 +113,7 @@ main {
   margin-left: 5%;
 }
 
-hr {
+.footerbreak {
   border-color: rgb(0, 0, 0);
   border-width: .1px;
   margin-right: 5%;
@@ -210,7 +211,7 @@ label {
 }
 
 .submit-button:hover {
-  background-color:  rgb(121, 19, 55); 
+  background-color:  rgb(148, 20, 65); 
 }
 
 .reset-button{
@@ -234,9 +235,9 @@ form {
   margin-right: 2%;
   margin-left: 2%;
   background-color: rgba(156, 38, 79, 0.199);
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 1px;
   padding-bottom: 5%;
 }
 
@@ -250,7 +251,6 @@ form label {
   font-size: 16px;
 }
 
-
 select {
   font-family: Didot;
   font-size: 16px;
@@ -259,13 +259,13 @@ select {
 }
 
 h4{
-  font-size: 18px;
+  font-size: 26px;
   font-family:  fantasy;
   letter-spacing: 2px;
   font-weight: 200;
-  margin-left: -5%;
-  margin-bottom: 3%;
-  text-decoration: underline 2px;
+  margin-left: -15px;
+  margin-bottom: 10px;
+  margin-top: 12px;
 }
 
 
