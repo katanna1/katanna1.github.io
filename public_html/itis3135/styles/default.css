@@ -68,10 +68,7 @@ h2 {
   font-family:  Stencil Std, fantasy;
   letter-spacing: 4px;
   text-align: center;
-  margin-left: -100px;
-  margin-right: -100px;
-  background-image: linear-gradient(rgb(255, 190, 220), rgba(255, 225, 236, 0.558), rgb(255, 190, 220));
-}
+ }
 
 h3 {
   color: rgb(0, 0, 0);
@@ -116,12 +113,7 @@ main {
   margin-left: 5%;
 }
 
-.footerbreak {
-  border-color: rgb(0, 0, 0);
-  border-width: .1px;
-  margin-right: 5%;
-  margin-left: 5%;
-}
+
 
 .navfoot {
   color: rgb(156, 38, 79);
@@ -182,25 +174,25 @@ tr:nth-child(odd) {
   background-color: rgba(255, 225, 236, 0.373);
 }
 
-textarea {
+
+/*Form*/
+.otherspec {
   font-family: Didot;
-  height:70px; 
-  width: 250px;
+  height:60px; 
+  width: 75%;
   resize: vertical; 
   font-size: 14px;
+  margin-left: 5%;
 }
 
 .feedback {
   font-family: Didot;
-  height: 150px; 
+  height: 120px; 
   width: 100%;
   resize: vertical; 
   font-size: 14px;
 }
 
-label {
-  margin-top: 10px; 
-}
 
 .submit-button{
   background-color: rgb(188, 35, 89);
@@ -214,7 +206,7 @@ label {
 }
 
 .submit-button:hover {
-  background-color:  rgb(148, 20, 65); 
+  background-color:  rgb(126, 31, 64); 
 }
 
 .reset-button{
@@ -229,7 +221,7 @@ label {
 }
 
 .reset-button:hover {
-  background-color: #979797; 
+  background-color: #787676; 
 }
 
 form {
@@ -249,16 +241,12 @@ input::placeholder {
   font-size: 14px;
 }
 
-form label {
-  font-family: Didot;
-  font-size: 16px;
-}
-
 select {
   font-family: Didot;
-  font-size: 16px;
+  font-size: 14px;
   height: 26px; 
-  width: 180px;
+  width: 38%;
+  margin-bottom: 2px;
 }
 
 h4{
@@ -266,10 +254,31 @@ h4{
   font-family:  fantasy;
   letter-spacing: 2px;
   font-weight: 200;
-  margin-left: -15px;
-  margin-bottom: 10px;
-  margin-top: 12px;
+  margin-left: 2%;
+  margin-bottom: 2px;
+  margin-top: -15px;
 }
+
+footer img{
+  margin: auto;
+  display: inline-block;
+}
+
+.formbreak {
+  border-style: solid;
+  border-color: rgb(156, 38, 79);
+  border-width: 1.2px;
+  margin-right: -5%;
+  margin-left: -5%;
+}
+
+footer hr {
+  border-color: rgb(0, 0, 0);
+  border-width: .1px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
 
 
 

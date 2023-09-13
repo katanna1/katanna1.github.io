@@ -37,9 +37,9 @@
 <main>
     <h2>HTML Forms</h2>
     <body>
-        <h3>Customer Feedback Form:</h3>
+        <h4>Customer Feedback Form:</h4>
         <form action="#">
-            <h4>Contact Details</h4>
+            <br>
             <label for="fname">First Name: </label>
             <input required type:"text" id="fname" name="fname" placeholder="Jane (required)" size="20"><br><br>
             <label for="lname">Last Name: </label>
@@ -67,14 +67,11 @@
             <label for="face">Face-to-Face</label><br>
             <input type="checkbox" id="other" name="contact" value="other">
             <label for="other">Other: <input type:"text" id="contact-other" name="contact" placeholder="Please specify here." size="20"></label>
-           <br><br>
+           <br><br><hr class="formbreak"><br>
             
-           <img style="width:70%; height: 20%; margin-top: -2px; margin-bottom: -2px; image-rendering:crisp-edges;" src="breaker.png"> 
 
-
-           <h4>Subject Matter</h4>
             <!--drop down-->
-            <label for="topic">General Inquiry Topic:</label>
+            <label for="topic">Main Reason for Contact:</label>
             <select id="topic" name="topic">
                 <option value="quotes">Pricing and Quotes</option>
                 <option value="timeline">Project Timeline</option>
@@ -88,8 +85,9 @@
                 <option value="tech">Technical Support</option>
                 <option value="other">Other</option>
             </select><br>
-            <label for="topic-other" style="font-size: 12px;">If you chose <b>Other</b>, please elaborate below: </label><br>
-            <textarea id="contact-other" name="contact" placeholder="The more detailed your response, the better we can assist you!"></textarea><br><br>
+
+            <label style="margin-left:5%; font-size: 14px" for="topic-other">If you chose <b>Other</b> above, please elaborate: </label><br>
+            <textarea class="otherspec" id="contact-other" name="contact" placeholder="The more detailed your response, the better we can assist you!"></textarea><br><br>
 
             
                         <!--radio-->
@@ -112,9 +110,10 @@
             
                         <label for="other-feedback">Is there anything else you'd like to share, ask, or tell us? </label><br>
                         <textarea class="feedback" id="contact-other" name="contact" placeholder="Please include anything you feel is important for us to know."></textarea><br><br>
-
-                    <input type="reset" value="Reset" class="reset-button">
-                    <input type="submit" value="Submit" class="submit-button">
+                    
+                        <center><input type="reset" value="Reset" class="reset-button">
+                            <input type="submit" value="Submit" class="submit-button"></center>
+                    
         </form>
     </body>
 </main>
@@ -122,8 +121,9 @@
 
 
 <!-- FOOTER NO CHANGE-->
-<br><hr class="footerbreak">
+<br>
 <footer> 
+<hr>
 <nav class="navfoot"> 
     <a href="https://webpages.charlotte.edu/kwils178/"> Charlotte.edu</a>
     •
