@@ -66,9 +66,11 @@ h2 {
   font-size: 38px;
   margin-top: 18px;
   font-family:  Stencil Std, fantasy;
-  letter-spacing: 2.6px;
-  text-align: left;
-  text-shadow: .5px .5px .5px rgb(0, 0, 0); 
+  letter-spacing: 4px;
+  text-align: center;
+  margin-left: -100px;
+  margin-right: -100px;
+  background-image: linear-gradient(rgb(255, 190, 220), rgba(255, 225, 236, 0.558), rgb(255, 190, 220));
 }
 
 h3 {
@@ -83,6 +85,7 @@ body img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -24px;
 }
 
 body figcaption{
@@ -93,8 +96,8 @@ body figcaption{
   text-align: center;
   margin-right: 25%;
   margin-left: 25%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
   
 main p {
