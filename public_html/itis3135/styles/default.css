@@ -1,5 +1,10 @@
+/****************************
 
+Styling for ITIS-3135 Site <3
 
+*****************************/
+
+/*General and Nav. Bar Formatting*/
 body {
   background-color: rgb(255, 190, 220);
 }
@@ -21,8 +26,8 @@ body {
 }
 
 
-/*Links*/
-header a{
+/*Header Links Formatting*/
+header a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-family: Stencil Std, fantasy;
@@ -31,27 +36,21 @@ header a{
   letter-spacing: 2.15px;
   font-variant: small-caps;
 }
+
 a:visited {
   color: rgb(68, 7, 45);
 }
+
 a:hover {
   background-color: rgba(203, 123, 160, 0.592);
 }
+
 a:active {
   color: rgb(68, 7, 45);
 }
 
-header p {
-  color: rgb(68, 7, 45);
-  font-family: Stencil Std, fantasy;
-  letter-spacing: 2px;
-  font-size: 22px;
-  font-weight: 500;
-  margin-top: -28px;
-  text-align: center;
-}
 
-
+/*Headers General Formatting*/
 h1 {
   color: rgb(0, 0, 0);
   font-family: Stencil Std, fantasy;
@@ -61,6 +60,16 @@ h1 {
   font-weight: 900;
 }
 
+header p { /*'subtext' under h1*/
+  color: rgb(68, 7, 45);
+  font-family: Stencil Std, fantasy;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: -28px;
+  text-align: center;
+}
+
 h2 {
   color: rgb(156, 38, 79);
   font-size: 38px;
@@ -68,7 +77,7 @@ h2 {
   font-family:  Stencil Std, fantasy;
   letter-spacing: 4px;
   text-align: center;
- }
+}
 
 h3 {
   color: rgb(0, 0, 0);
@@ -78,6 +87,18 @@ h3 {
   margin-top: -20px;
 }
 
+h4 { /*currently only used on 'Forms' page ~ may change*/
+  font-size: 26px;
+  font-family:  fantasy;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-left: 2%;
+  margin-bottom: 2px;
+  margin-top: -15px;
+}
+
+
+/*Body Image Formatting*/
 body img {
   display: block;
   margin-left: auto;
@@ -85,7 +106,7 @@ body img {
   margin-top: -24px;
 }
 
-body figcaption{
+body figcaption {
   font-family: Didot;
   font-size: 14px;
   color: rgb(0, 0, 0);
@@ -96,15 +117,9 @@ body figcaption{
   margin-top: 1.5%;
   margin-bottom: 1.5%;
 }
-  
-main p {
-  font-family: Didot;
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  margin-right: 5%;
-  margin-left: 5%;
-}
 
+
+/*Main General Formatting*/  
 main {
   font-family: Didot;
   font-size: 16px;
@@ -113,16 +128,21 @@ main {
   margin-left: 5%;
 }
 
-
-
-.navfoot {
-  color: rgb(156, 38, 79);
-  text-align: center;
-  letter-spacing: 1.7px;
+main p {
   font-family: Didot;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
-footer a{
+
+/*Footer Formatting*/
+footer {
+  text-align: center;
+}
+
+footer a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   letter-spacing: 1px;
@@ -130,7 +150,7 @@ footer a{
   font-size: 10px;
 }
 
-footer p, .footercompany {
+footer p, .footercompany { /*copyright*/
   font-family: Didot;
   font-size: 9px;
   color: rgb(0, 0, 0);
@@ -138,17 +158,33 @@ footer p, .footercompany {
   letter-spacing: .4px;
 }
 
-footer {
-  text-align: center;
+footer img {
+  margin: auto;
+  display: inline-block;
 }
 
-/*Tables*/
+footer hr {
+  border-color: rgb(0, 0, 0);
+  border-width: .1px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.navfoot { /*link seperators*/
+  color: rgb(156, 38, 79);
+  text-align: center;
+  letter-spacing: 1.7px;
+  font-family: Didot;
+}
+
+
+/*Table Formatting*/
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
-th, td {
+th, td { /*table headers and data boxes*/
   border: 1.2px solid #000000;
   font-family: Didot;
   font-size: 16px;
@@ -156,36 +192,34 @@ th, td {
   text-align: left;
 }
 
-th {
+th { /*table headers*/
   background-color: rgb(181, 72, 110);
   color: rgb(0, 0, 0);
   font-family: Didot;
   font-size: 18px;
 }
 
-.category {
+.category { /*makes category column all one color*/
   font-weight: bold;
   background-color:rgb(228, 157, 190);
 }
 
-
-/* Alternate row colors */
-tr:nth-child(odd) {
+tr:nth-child(odd) { /*alternating row colors*/
   background-color: rgba(255, 225, 236, 0.373);
 }
 
 
-/*Form*/
-.otherspec {
+/*HTML Form Formatting*/
+.otherspec { /*text area under 'Main Reason...' */
   font-family: Didot;
   height:60px; 
-  width: 75%;
+  width: 45%;
   resize: vertical; 
   font-size: 14px;
   margin-left: 5%;
 }
 
-.feedback {
+.feedback { /*text area under 'Is there anything...'*/
   font-family: Didot;
   height: 120px; 
   width: 100%;
@@ -193,8 +227,7 @@ tr:nth-child(odd) {
   font-size: 14px;
 }
 
-
-.submit-button{
+.submit-button {
   background-color: rgb(188, 35, 89);
   border-color: rgb(121, 19, 55);
   height: 30px; 
@@ -209,7 +242,7 @@ tr:nth-child(odd) {
   background-color:  rgb(126, 31, 64); 
 }
 
-.reset-button{
+.reset-button {
   background-color: rgb(225, 214, 218);
   border-color: #979797;
   height: 30px; 
@@ -241,48 +274,18 @@ input::placeholder {
   font-size: 14px;
 }
 
-select {
+select { /*dropdown, select one*/
   font-family: Didot;
   font-size: 14px;
   height: 26px; 
   width: 38%;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
-h4{
-  font-size: 26px;
-  font-family:  fantasy;
-  letter-spacing: 2px;
-  font-weight: 200;
-  margin-left: 2%;
-  margin-bottom: 2px;
-  margin-top: -15px;
-}
-
-footer img{
-  margin: auto;
-  display: inline-block;
-}
-
-.formbreak {
+.formbreak { /*dark-red page divider*/
   border-style: solid;
   border-color: rgb(156, 38, 79);
   border-width: 1.2px;
   margin-right: -5%;
   margin-left: -5%;
 }
-
-footer hr {
-  border-color: rgb(0, 0, 0);
-  border-width: .1px;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-
-
-
-
-
-
-

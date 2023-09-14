@@ -1,0 +1,58 @@
+~3135 Site Color Scheme~
+(***** indicates frequent use and/or large areas)
+
+ |Pinks|  
+    Lighter: 
+      rgb(255, 190, 220); ~light pink  *****                
+      rgba(203, 123, 160, 0.592); ~dull pastel pink
+      rgb(228, 157, 190); ~pastel pink
+      rgba(255, 225, 236, 0.373); ~baby pink (very light)
+      rgba(156, 38, 79, 0.199); ~pink (bit darker hued than main)  *****
+    More Vibrant:
+      rgb(188, 35, 89); ~bright rose
+      rgb(156, 38, 79); ~raspberry pink  *****
+      rgb(188, 35, 89); ~magenta
+      rgb(156, 38, 79); ~cherry
+      rgb(181, 72, 110); ~dusty rose
+
+ |Purples|  
+    Darker:
+      rgb(68, 7, 45); ~dark purple  *****
+      rgb(126, 31, 64);  ~plum
+      rgb(189, 117, 151); ~dusty plum
+
+ |Greys|
+    Lighter:
+      rgba(255, 225, 236, 0.373); ~very light grey
+      rgb(225, 214, 218); ~light grey  *****
+      #787676; ~grey
+
+______________________________________________________
+||||||||||||||||||||||||||||||||||||||||||||||||||||||
+______________________________________________________
+
+~Locations~
+    MAIN Background: rgb(255, 190, 220); ~light pink
+    Nav. Bar <3's: rgb(188, 35, 89); ~bright rose
+    Nav. Background: rgba(255, 225, 236, 0.373); ~light grey
+
+    Headers 1, 3, and 4: rgb(0, 0, 0); ~black
+    Header 2: rgb(156, 38, 79); ~raspberry pink
+    Header Subtext (p): rgb(68, 7, 45); ~dark purple
+
+    Link Hover: rgba(203, 123, 160, 0.592); ~dull pastel pink
+    Link Active and Visited: rgb(68, 7, 45); ~dark purple
+
+    Table Headers: rgb(181, 72, 110); ~dusty rose
+    Table Emphasized Column: rgb(228, 157, 190); ~pastel pink
+    Table Emphasized Row: rgb(189, 117, 151); ~dusty plum
+    Table Alternating Rows: rgba(255, 225, 236, 0.373); ~baby pink (very light)
+
+    SUBMIT Button: rgb(188, 35, 89); ~magenta
+    ^^  Hover: rgb(126, 31, 64);  ~plum
+    RESET Button: rgb(225, 214, 218); ~light grey
+    ^^  Hover: #787676; ~grey
+
+    Form Background: rgba(156, 38, 79, 0.199); ~pink (bit darker hue than main background)
+    Form Page Divide: rgb(156, 38, 79); ~cherry
+    Footer Seperators: rgb(156, 38, 79); ~cherry
