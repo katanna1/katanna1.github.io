@@ -29,27 +29,30 @@ body {
 .subnav {
   overflow: hidden;
   display: inline-block;
-  margin-bottom: -5px;
-  padding:.1%;
+  margin-bottom: -8px;
+  padding:.3%;
 }
 
 /* Subnav button */
  .subnav-button {
   font-size: 16px;
-  background-color: rgba(203, 123, 160, 0.592);
+  background-color: rgba(156, 38, 79, 0.425);
+  cursor:pointer;
   text-decoration: none;
   font-family: Stencil Std, fantasy;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 2.15px;
   font-variant: small-caps;
-  border: solid 1.5px black;
+  border: solid 1.75px black;
   border-radius: 12%;
+  width:80px;
 }
 
 /* hovering over the button */
  .subnav:hover .subnav-button {
-  background-color: rgb(181, 72, 110);
+  background-color: rgb(188, 35, 89);
+  border-radius: 12%;
 }
 
 /* stuff in the dropdown */
@@ -58,10 +61,10 @@ body {
   position: absolute;
   text-align: right !important;
   transform: translate(-50%, 0) !important;
-  background-color: rgb(203, 123, 160);
+  background-color: rgb(189, 117, 151);
   width:15%;
   z-index: 1;
-  margin-top: .5px;
+  margin-top: .85px;
 }
 
 /* links of stuff in the dropdown */
