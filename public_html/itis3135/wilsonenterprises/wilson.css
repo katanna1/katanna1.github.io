@@ -18,7 +18,7 @@ body {
     border-width: 2.5px;
     border-color: #3B5249;
     border-radius: 15%;
-    margin-top: -3%;
+    margin-top: -2%;
     margin-bottom: 3%;
     padding: 1.1%;
 }
@@ -49,19 +49,19 @@ header p {
     font-family: Tahoma;
     text-align: center;
     font-weight: 600;
-    margin-top: -6%;
+    margin-top: -5.5%;
     margin-bottom: 2.5%;
     padding: 1%;
 }
 
 .headerlogo{
     max-width: 10%;
-    max-height: max-content;
+    max-height: 15%;
     position: absolute;
     top: 20px;
-    left: 20px;
+    right: 20px;
+    padding: 1% 5%;
 }
-
   
 h1 {
     color: #222b19;
@@ -73,19 +73,18 @@ h1 {
     text-transform:uppercase;
     margin-left: 10%;
     margin-right: 10%;
-    text-wrap:wrap;
 }
   
 h2 {
     color: #4e573c;
-    font-size: 35px;
+    font-size: 44px;
     font-family: Impact;
     text-align: center;
     font-weight: 100;
     margin-right: 4%;
     margin-left: 4%;
     margin-top: -1%;
-    margin-bottom: 2.5%;
+    margin-bottom: -1%;
 }
 
 h3 {
@@ -96,6 +95,17 @@ h3 {
     margin-left: 4%;
     margin-bottom: 2%;
 }
+
+h4 {
+    color: #292B31;
+    font-family: Impact;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    letter-spacing: 1.5px;
+}
   
 body img {
     display: block;
@@ -103,7 +113,7 @@ body img {
     margin-right: auto;
 }
   
-body figcaption{
+body figcaption {
     font-family: Tahoma;
     font-size: 14px;
     color: #292B31;
@@ -124,12 +134,32 @@ main p {
     margin-top: -1%;
 }
 
+.contactus {
+    font-family: Tahoma;
+    font-size: 18px;
+    color: #292B31;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 2%;
+    background-color: #BEC5AD;
+    border-style: solid;
+    border-width: 4px;
+    border-image: linear-gradient(to left top, #222b19, #4e573c) 1;
+}
+
 ul {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+ul li {
     font-family: Tahoma;
     font-size: 16px;
     color: #292B31;
-    list-style:square;
-    margin-left: 2%;
+    list-style: square;
+    margin-left: 5%;
+    margin-top: .3%;
 }
   
 hr {
