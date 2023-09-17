@@ -1,68 +1,100 @@
 
 
 body {
-    background-color: #baddf19c;
+    background-color: #A4B494;
   }
   
 .nav {
     color: rgb(0, 0, 0);
-    background-color: rgba(110, 171, 240, 0.301);
-    font-size: 16px;
+    background-color: #BEC5AD;
+    font-family: Tahoma;
+    font-size: 22px;
     text-align: center;
+    font-variant: all-small-caps;
+    letter-spacing: .8px;
     margin-right: 2%;
     margin-left: 2%;
-    border-bottom-style: ridge;
-    border-top-style: ridge;
-    border-right-style: dotted;
-    border-left-style: dotted;
-    border-width: 1.5px;
-    border-color: rgb(8, 39, 94);
-    border-radius: 20%;
-    padding: 1.25%;
-    margin-top: -10px;
-    margin-bottom: 10px;
+    border-style: ridge;
+    border-width: 2.5px;
+    border-color: #3B5249;
+    border-radius: 15%;
+    margin-top: -3%;
+    margin-bottom: 3%;
+    padding: 1.1%;
 }
+
   
   /*Links*/
 header a{
     color: rgb(0, 0, 0);
     text-decoration:none;
+    
 }
 a:visited {
-    color: rgb(8, 39, 94);
+    color: #292B31;
 }
 a:hover {
-    background-color: rgba(20, 61, 132, 0.267);
+    background-color: #4e573c74;
+    border-style:hidden;
+    border-radius: 10%;
+    padding: .1%;
 }
 a:active {
-    color: rgb(43, 51, 62);
+    color: #4e573c;
 }
   
 header p {
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    font-family:  Stencil Std, fantasy;
+    color: #292B31;
+    font-size: 22px;
+    font-family: Tahoma;
     text-align: center;
-    font-weight: 500;
-    margin-top: -34px;
+    font-weight: 600;
+    margin-top: -6%;
+    margin-bottom: 2.5%;
+    padding: 1%;
 }
-  
+
+.headerlogo{
+    max-width: 10%;
+    max-height: max-content;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
   
 h1 {
-    color: rgb(0, 0, 0);
-    font-family: Stencil Std, fantasy;
-    font-size: 45px;
-    font-variant: small-caps;
+    color: #222b19;
+    font-family: Impact;
+    font-size: 60px;
     text-align: center;
+    font-weight: 100;
+    padding: 1%;
+    text-transform:uppercase;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-wrap:wrap;
 }
   
 h2 {
-    color: rgb(8, 39, 94);
-    font-size: 25px;
-    font-family:  Stencil Std, fantasy;
+    color: #4e573c;
+    font-size: 35px;
+    font-family: Impact;
+    text-align: center;
     font-weight: 100;
     margin-right: 4%;
     margin-left: 4%;
+    margin-top: -1%;
+    margin-bottom: 2.5%;
+}
+
+h3 {
+    color: #222b19;
+    font-family: Impact;
+    font-size: 24px;
+    font-weight: 100;
+    margin-left: 4%;
+    margin-bottom: 2%;
 }
   
 body img {
@@ -72,57 +104,66 @@ body img {
 }
   
 body figcaption{
-    font-family: Didot;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #292B31;
     font-style: italic;
     text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 20%;
+    margin-left: 20%;
     margin-top: 1%;
     margin-bottom: 1%;
   }
     
 main p {
-    font-family: Didot;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
+    font-family: Tahoma;
+    font-size: 16px;
+    color: #292B31;
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: -12px;
+    margin-top: -1%;
+}
+
+ul {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: #292B31;
+    list-style:square;
+    margin-left: 2%;
 }
   
-  
 hr {
-    border-color: rgb(0, 0, 0);
-    border-width: .5px;
+    border-color: #222b19;
+    border-width: 1.4px;
     margin-right: 2%;
     margin-left: 2%;
 }
   
 .navfoot {
-    color: rgb(0, 0, 0);
+    color: #292B31;
     text-align: center;
-    font-family: Didot;
-    font-size: 12px;
+    font-family: Tahoma;
+    font-size: 14px;
 }
   
-footer a{
-    color: rgb(0, 0, 0);
+footer a {
+    color: #292B31;
     text-decoration: none;
-    font-family: Didot;
-    font-size: 12px;
+    font-family: Tahoma;
+    font-size: 14px;
 }
   
 footer p {
-    font-family: Didot;
-    font-size: 8px;
-    color: rgb(0, 0, 0);
+    font-family: Tahoma;
+    font-size: 10px;
+    color: #292B31;
     text-align: center;
+    margin-top: .5%;
 }
   
 footer {
     text-align: center;
+    padding-top: 1%;
 }
   
   
