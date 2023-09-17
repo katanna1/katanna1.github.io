@@ -11,7 +11,7 @@ body {
 
 .nav {
   color:  rgb(188, 35, 89);
-  font-size: 25;
+  font-size: 14px;
   border: 2.8px solid black;
   border-radius: 25%;
   border-right: 5px dotted black;
@@ -25,7 +25,70 @@ body {
   background-color:  rgba(255, 225, 236, 0.373);
 }
 
+/* Tposition button on main nav */
+.subnav {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: -5px;
+  padding:.1%;
+}
 
+/* Subnav button */
+ .subnav-button {
+  font-size: 16px;
+  background-color: rgba(203, 123, 160, 0.592);
+  text-decoration: none;
+  font-family: Stencil Std, fantasy;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 2.15px;
+  font-variant: small-caps;
+  border: solid 1.5px black;
+  border-radius: 12%;
+}
+
+/* hovering over the button */
+ .subnav:hover .subnav-button {
+  background-color: rgb(181, 72, 110);
+}
+
+/* stuff in the dropdown */
+.subnav-content {
+  display: none;
+  position: absolute;
+  text-align: right !important;
+  transform: translate(-50%, 0) !important;
+  background-color: rgb(203, 123, 160);
+  width:15%;
+  z-index: 1;
+  margin-top: .5px;
+}
+
+/* links of stuff in the dropdown */
+.subnav-content a {
+  float: right;
+  border-radius: 0%;
+  padding: 6% 4%;
+  margin: 0;
+}
+
+/* hovering over each subbox, the links */
+.subnav-content a:hover {
+  background-color: rgba(255, 225, 236, 0.373);
+  border-radius: 0%;
+  width: 92%;
+}
+
+/* Actual full down box */
+.subnav:hover .subnav-content {
+  display: block;
+  border: solid 1.8px black;
+  border-radius: 0%;
+}
+
+a {
+  border-radius: 12%;
+}
 
 /*Header Links Formatting*/
 .nav a {
