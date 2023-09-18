@@ -119,6 +119,8 @@ a:active {
 h3 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  background-color:  rgba(255, 225, 236, 0.373);
+  padding:2px;
 }
 
 
@@ -169,7 +171,7 @@ h3 {
   margin-top: -15px;
 }
 
-h4{
+h4 {
   font-family: Didot;
   font-size: 18px;
   color: rgb(110, 14, 73);
