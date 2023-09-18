@@ -4,7 +4,7 @@ Styling for ITIS-3135 Site <3
 
 *****************************/
 
-/*General and Nav. Bar Formatting*/
+/*General and Main Nav. Bar Formatting*/
 body {
   background-color: rgb(255, 190, 220);
 }
@@ -25,16 +25,16 @@ body {
   background-color:  rgba(255, 225, 236, 0.373);
 }
 
-/* Tposition button on main nav */
-.subnav {
+
+/*Sub-Navigation Formatting*/
+.subnav { /* Position button on main nav */
   overflow: hidden;
   display: inline-block;
   margin-bottom: -8px;
   padding:.3%;
 }
 
-/* Subnav button */
- .subnav-button {
+ .subnav-button { /* Subnav button */
   font-size: 16px;
   background-color: rgba(156, 38, 79, 0.425);
   cursor:pointer;
@@ -49,14 +49,7 @@ body {
   width:80px;
 }
 
-/* hovering over the button */
- .subnav:hover .subnav-button {
-  background-color: rgb(188, 35, 89);
-  border-radius: 12%;
-}
-
-/* stuff in the dropdown */
-.subnav-content {
+.subnav-content { /* stuff in the dropdown */
   display: none;
   position: absolute;
   text-align: right !important;
@@ -67,34 +60,13 @@ body {
   margin-top: .85px;
 }
 
-/* links of stuff in the dropdown */
-.subnav-content a {
-  float: right;
-  border-radius: 0%;
-  padding: 6% 4%;
-  margin: 0;
-}
 
-/* hovering over each subbox, the links */
-.subnav-content a:hover {
-  background-color: rgba(255, 225, 236, 0.373);
-  border-radius: 0%;
-  width: 92%;
-}
-
-/* Actual full down box */
-.subnav:hover .subnav-content {
-  display: block;
-  border: solid 1.8px black;
-  border-radius: 0%;
-}
-
+/*Different Links Formatting*/
 a {
   border-radius: 12%;
 }
 
-/*Header Links Formatting*/
-.nav a {
+.nav a { /*main nav. bar links*/
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-family: Stencil Std, fantasy;
@@ -116,11 +88,43 @@ a:active {
   color: rgb(68, 7, 45);
 }
 
-h3 a {
+h3 a { /*h3 links*/
   color: rgb(0, 0, 0);
   text-decoration: none;
   background-color:  rgba(255, 225, 236, 0.373);
   padding:2px;
+}
+
+.subnav-content a { /* links of stuff in the dropdown */
+  float: right;
+  border-radius: 0%;
+  padding: 6% 4%;
+  margin: 0;
+}
+
+.subnav-content a:hover { /* hovering over each subbox */
+  background-color: rgba(255, 225, 236, 0.373);
+  border-radius: 0%;
+  width: 92%;
+}
+
+.subnav:hover .subnav-button { /* hovering over the button */
+  background-color: rgb(188, 35, 89);
+  border-radius: 12%;
+}
+
+.subnav:hover .subnav-content { /* Actual full down box */
+  display: block;
+  border: solid 1.8px black;
+  border-radius: 0%;
+}
+
+footer a { /*footer links*/
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: Didot;
+  font-size: 10px;
 }
 
 
@@ -161,7 +165,7 @@ h3 {
   margin-top: -15px;
 }
 
-.formstitle {
+.formstitle { /*h3 customized for forms title*/
   font-size: 26px;
   font-family:  fantasy;
   letter-spacing: 2px;
@@ -225,14 +229,6 @@ footer {
   text-align: center;
 }
 
-footer a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-family: Didot;
-  font-size: 10px;
-}
-
 footer p, .footercompany { /*copyright*/
   font-family: Didot;
   font-size: 9px;
@@ -244,13 +240,6 @@ footer p, .footercompany { /*copyright*/
 footer img {
   margin: auto;
   display: inline-block;
-}
-
-footer hr {
-  border-color: rgb(0, 0, 0);
-  border-width: .1px;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 
 .navfoot { /*link seperators*/
@@ -267,19 +256,19 @@ table {
   width: 100%;
 }
 
+th { /*table headers*/
+  background-color: rgb(181, 72, 110);
+  color: rgb(0, 0, 0);
+  font-family: Didot;
+  font-size: 18px;
+}
+
 th, td { /*table headers and data boxes*/
   border: 1.2px solid #000000;
   font-family: Didot;
   font-size: 16px;
   padding: 6px;
   text-align: left;
-}
-
-th { /*table headers*/
-  background-color: rgb(181, 72, 110);
-  color: rgb(0, 0, 0);
-  font-family: Didot;
-  font-size: 18px;
 }
 
 .category { /*makes category column all one color*/
@@ -293,6 +282,31 @@ tr:nth-child(odd) { /*alternating row colors*/
 
 
 /*HTML Form Formatting*/
+form {
+  font-family: Didot;
+  font-size: 16px;
+  margin-right: 2%;
+  margin-left: 2%;
+  background-color: rgba(156, 38, 79, 0.199);
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 1px;
+  padding-bottom: 5%;
+}
+
+select { /*dropdown, select one*/
+  font-family: Didot;
+  font-size: 14px;
+  height: 26px; 
+  width: 38%;
+  margin-bottom: 4px;
+}
+
+input::placeholder {
+  font-family: Didot;
+  font-size: 14px;
+}
+
 .otherspec { /*text area under 'Main Reason...' */
   font-family: Didot;
   height:60px; 
@@ -310,6 +324,8 @@ tr:nth-child(odd) { /*alternating row colors*/
   font-size: 14px;
 }
 
+
+/*Form's Button Formatting*/
 .submit-button {
   background-color: rgb(188, 35, 89);
   border-color: rgb(121, 19, 55);
@@ -340,31 +356,8 @@ tr:nth-child(odd) { /*alternating row colors*/
   background-color: #787676; 
 }
 
-form {
-  font-family: Didot;
-  font-size: 16px;
-  margin-right: 2%;
-  margin-left: 2%;
-  background-color: rgba(156, 38, 79, 0.199);
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-top: 1px;
-  padding-bottom: 5%;
-}
 
-input::placeholder {
-  font-family: Didot;
-  font-size: 14px;
-}
-
-select { /*dropdown, select one*/
-  font-family: Didot;
-  font-size: 14px;
-  height: 26px; 
-  width: 38%;
-  margin-bottom: 4px;
-}
-
+/*<hr> Formatting*/
 .formbreak { /*dark-red page divider*/
   border-style: solid;
   border-color: rgb(156, 38, 79);
@@ -381,8 +374,15 @@ select { /*dropdown, select one*/
   margin-left: 35%;
 }
 
-/*Lists*/
+footer hr {
+  border-color: rgb(0, 0, 0);
+  border-width: .1px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
 
+
+/*List Formatting*/
 ul {
   margin-bottom: 2%;
   margin-top: 2%;

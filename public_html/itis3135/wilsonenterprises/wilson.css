@@ -1,5 +1,10 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Styling for Wilson Enterprises Site <3
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*General and Main Nav. Bar Formatting*/
 body {
     background-color: #A4B494;
     margin-left: 0%;
@@ -7,7 +12,6 @@ body {
     margin-bottom: 3%;
     margin-top: -1%;
     scroll-behavior: smooth;
-    
 }
   
 .nav {
@@ -30,26 +34,49 @@ body {
 }
 
   
-  /*Links*/
-header a{
+/*Links*/
+header a {
     color: rgb(0, 0, 0);
     text-decoration:none;
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px; 
 }
+
 a:visited {
     color: #292B31;
 }
+
 a:hover {
     background-color: #4e573c74;
     border-style:hidden;
     border-radius: 10%;
     padding: .1%;
 }
+
 a:active {
     color: #4e573c;
 }
-  
+
+footer a {
+    color: #292B31;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+
+/*Headers General Formatting*/
+h1 {
+    color: #222b19;
+    font-family: Impact;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 100;
+    padding: 1%;
+    text-transform:uppercase;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 header p {
     color: #292B31;
     font-size: 22px;
@@ -61,25 +88,13 @@ header p {
     padding: 1%;
 }
 
-.headerlogo{
-    max-width: 10%;
-    max-height: 15%;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 1% 5%;
-}
-  
-h1 {
-    color: #222b19;
-    font-family: Impact;
-    font-size: 60px;
-    text-align: center;
-    font-weight: 100;
-    padding: 1%;
-    text-transform:uppercase;
-    margin-left: 10%;
-    margin-right: 10%;
+main p {
+    font-family: Tahoma;
+    font-size: 16px;
+    color: #292B31;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: -1%;
 }
   
 h2 {
@@ -113,7 +128,9 @@ h4 {
     margin-bottom: 2%;
     letter-spacing: 1.5px;
 }
-  
+
+
+/*Image and Captions Formatting*/
 body img {
     display: block;
     margin-left: auto;
@@ -130,17 +147,19 @@ body figcaption {
     margin-left: 20%;
     margin-top: 1%;
     margin-bottom: 1%;
-  }
-    
-main p {
-    font-family: Tahoma;
-    font-size: 16px;
-    color: #292B31;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: -1%;
 }
 
+.headerlogo {
+    max-width: 10%;
+    max-height: 15%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 1% 5%;
+}
+    
+
+/*Homepage Contact Info Formatting*/
 .contactus {
     font-family: Tahoma;
     font-size: 18px;
@@ -155,6 +174,8 @@ main p {
     border-image: linear-gradient(to left top, #222b19, #4e573c) 1;
 }
 
+
+/*List Formatting*/
 ul {
     margin-top: 2%;
     margin-bottom: 2%;
@@ -168,28 +189,23 @@ ul li {
     margin-left: 5%;
     margin-top: .3%;
 }
-  
-hr {
+
+
+/*<hr> Formatting*/
+.footerbreak {
     border-color: #222b19;
     border-width: 1.4px;
     margin-right: 2%;
     margin-left: 2%;
 }
   
-.navfoot {
-    color: #292B31;
+
+/*Footer Formatting*/
+footer {
     text-align: center;
-    font-family: Tahoma;
-    font-size: 14px;
+    padding-top: 1%;
 }
-  
-footer a {
-    color: #292B31;
-    text-decoration: none;
-    font-family: Tahoma;
-    font-size: 14px;
-}
-  
+
 footer p {
     font-family: Tahoma;
     font-size: 10px;
@@ -197,11 +213,10 @@ footer p {
     text-align: center;
     margin-top: .5%;
 }
-  
-footer {
+
+.navfoot {
+    color: #292B31;
     text-align: center;
-    padding-top: 1%;
+    font-family: Tahoma;
+    font-size: 14px;
 }
-  
-  
-  
