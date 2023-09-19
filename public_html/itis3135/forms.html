@@ -42,6 +42,7 @@
 
 
 <!-- MAIN -->
+<body>
 <main>
     <h2>HTML Forms</h2>
         <h3 class="formstitle">Customer Feedback Form:</h3>
@@ -64,16 +65,16 @@
 
             <!--checkbox-->
             <label>Preferred Method(s) of Contact: </label><br>
-            <input type="checkbox" id="email" name="contact" value="email">
-            <label for="email">Email</label><br>
-            <input type="checkbox" id="phone" name="contact" value="phone">
-            <label for="phone">Home Phone</label><br>
-            <input type="checkbox" id="mphone" name="contact" value="mphone">
-            <label for="mphone">Mobile Phone</label><br>
-            <input type="checkbox" id="face" name="contact" value="face">
-            <label for="face">Face-to-Face</label><br>
-            <input type="checkbox" id="other" name="contact" value="other">
-            <label for="other">Other: <input type="text" id="contact-other" name="contact" placeholder="Please specify here." size="20"></label>
+            <input type="checkbox" id="emailcont" name="contact" value="email">
+            <label for="emailcont">Email</label><br>
+            <input type="checkbox" id="phonecont" name="contact" value="phone">
+            <label for="phonecont">Home Phone</label><br>
+            <input type="checkbox" id="mphonecont" name="contact" value="mphone">
+            <label for="mphonecont">Mobile Phone</label><br>
+            <input type="checkbox" id="facecont" name="contact" value="face">
+            <label for="facecont">Face-to-Face</label><br>
+            <input type="checkbox" id="othercont" name="contact" value="other">
+            <label for="othercont">Other: <input type="text" id="contact-other" name="contact" placeholder="Please specify here." size="20"></label>
            <br><br><hr class="formbreak"><br>
             
 
@@ -93,8 +94,8 @@
                 <option value="other">Other</option>
             </select><br>
 
-            <label style="margin-left:5%; font-size: 14px" for="topic-other">If you chose <b>Other</b> above, please elaborate: </label><br>
-            <textarea class="otherspec" id="contact-other" name="contact" placeholder="The more detailed your response, the better we can assist you!"></textarea><br><br>
+            <label style="margin-left:5%; font-size: 14px" for="other">If you chose <b>Other</b> above, please elaborate: </label><br>
+            <textarea class="otherspec" id="contact-other-large" name="contact" placeholder="The more detailed your response, the better we can assist you!"></textarea><br><br>
 
             
                         <!--radio-->
@@ -111,19 +112,20 @@
                         <label for="inter">Internet Seach (Google, Bing, etc.)</label><br>
                         <input type="radio" id="rev" name="hear" value="rev">
                         <label for="rev">Third-Party Review</label><br>
-                        <input type="radio" id="other" name="hear" value="other">
-                        <label for="other">Other: </label><input type="text" id="contact-other" name="contact" placeholder="Please specify here." size="20"></label>
+                        <input type="radio" id="other" name="hear" value="otherhear">
+                        <label for="otherhear">Other: </label><input type="text" id="contact-other" name="contact" placeholder="Please specify here." size="20">
                         <br><br>
             
-                        <label for="other-feedback">Is there anything else you'd like to share, ask, or tell us? </label><br>
-                        <textarea class="feedback" id="contact-other" name="contact" placeholder="Please include anything you feel is important for us to know."></textarea><br><br>
+                        <label for="other">Is there anything else you'd like to share, ask, or tell us? </label><br>
+                        <textarea class="feedback" id="contact-other-textarea" name="contact" placeholder="Please include anything you feel is important for us to know."></textarea><br><br>
                     
-                        <center><input type="reset" value="Reset" class="reset-button">
-                            <input type="submit" value="Submit" class="submit-button"></center>
+                        <input type="reset" value="Reset" class="reset-button">
+                            <input type="submit" value="Submit" class="submit-button">
                     
         </form>
-    </body>
-</main>
+    </main>
+</body>
+
 
 
 
