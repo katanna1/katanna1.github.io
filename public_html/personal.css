@@ -1,95 +1,105 @@
 
-
-
 body {
-    background-color: rgb(213, 208, 255);
-  }
+  background-color: #c8d1d7;
+  margin:4%;
+}
   
-  
-  /*Links*/
+/*Links*/
 a {
-    color: rgb(124, 29, 179);
-    font-family: Didot;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  a:visited {
-    color: rgb(63, 7, 132);
-  }
-  a:hover {
-    background-color: rgba(139, 91, 216, 0.202);
-  }
-  a:active {
-    color: rgb(63, 7, 132);
-  }
-  
-  h1 {
-    color: rgb(0, 0, 0);
-    font-family: Stencil Std, fantasy;
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 45px;
-    font-weight: 900;
-  }
-
-  
-  h2 {
-    color: rgb(63, 7, 132);
-    font-size: 20;
-    font-family:  Stencil Std, fantasy;
-    letter-spacing: 2px;
-    font-weight: 10;
-    margin-bottom: 1px;
-    margin-left: 4%;
-  }
-  
-    
-  main p {
-    font-family: Didot;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-.ty {
-  font-size: 20;
-  font-family:  Stencil Std, fantasy;
-  letter-spacing: 2px;
+  color: #0D1B2A;
+  font-family: Tahoma;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 15%;
+  padding:.25%;
 }
 
+a:visited {
+  color: #415A77;
+}
+
+a:hover {
+  background-color: #778da983;
+}
+
+a:active {
+  color: #1B263B;
+}
   
-  hr {
-    border-color: rgb(0, 0, 0);
-    border-width: .1px;
-    margin-right: 4%;
-    margin-left: 4%;
-  }
+
+h1 {
+  color: #1B263B;
+  font-family: Stencil Std, fantasy;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+
+h2 {
+  color: #415A77;
+  font-size: 28px;
+  font-family:  Stencil Std, fantasy;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-bottom: 1px;
+  margin-left: 4%;
+}
+   
+main p {
+  font-family: Tahoma;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.ty {
+  font-size: 35px;
+  font-family:  Stencil Std, fantasy;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+hr {
+  border-color: rgb(0, 0, 0);
+  border-width: .1px;
+  margin-right: 4%;
+  margin-left: 4%;
+}
   
-  .navfoot {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: Didot;
-  }
+.navfoot {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Tahoma;
+}
   
-  footer a{
-    color: rgb(0, 0, 0);
-    font-family: Didot;
-    font-size: 10px;
-  }
+footer a:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
   
-  footer p {
-    font-family: Didot;
-    font-size: 10px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    letter-spacing: .5px;
-  }
+footer p {
+  font-family: Tahoma;
+  font-size: 10px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  letter-spacing: .5px;
+}
   
-  footer {
-    text-align: center;
-  }
+footer {
+  text-align: center;
+}
   
+.uncclogo{
+  padding-top: 8%;
+  max-height: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
   
   
