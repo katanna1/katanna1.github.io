@@ -20,7 +20,10 @@ body {
   margin-top: -15px;
   margin-right: 1%;
   margin-left: 1%;
-  padding: .9%;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+  padding-left: .75%;
+  padding-right: .75%;
   letter-spacing: 2px;
   background-color:  rgba(255, 225, 236, 0.373);
 }
@@ -30,15 +33,15 @@ body {
 .subnav { /* Position button on main nav */
   overflow: hidden;
   display: inline-block;
-  margin-bottom: -8px;
+  margin-bottom: -9px;
   padding:.3%;
 }
 
  .subnav-button { /* Subnav button */
   font-size: 16px;
   background-color: rgba(156, 38, 79, 0.425);
-  cursor:pointer;
   text-decoration: none;
+  cursor: pointer;
   font-family: Stencil Std, fantasy;
   font-weight: 300;
   font-size: 16px;
