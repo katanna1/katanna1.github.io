@@ -39,7 +39,7 @@ body {
 
  .subnav-button { /* Subnav button */
   font-size: 16px;
-  background-color: rgba(156, 38, 79, 0.425);
+  background-color:  rgba(255, 225, 236, 0.8);
   text-decoration: none;
   cursor: pointer;
   font-family: Stencil Std, fantasy;
@@ -55,7 +55,9 @@ body {
 .subnav-content { /* stuff in the dropdown */
   display: none;
   position: absolute;
+  float: right;
   text-align: right !important;
+  text-wrap: nowrap;
   transform: translate(-50%, 0) !important;
   background-color: rgb(189, 117, 151);
   width:15%;
@@ -99,20 +101,22 @@ h3 a { /*h3 links*/
 }
 
 .subnav-content a { /* links of stuff in the dropdown */
-  float: right;
   border-radius: 0%;
   padding: 6% 4%;
   margin: 0;
+  display: block;
 }
 
 .subnav-content a:hover { /* hovering over each subbox */
   background-color: rgba(255, 225, 236, 0.373);
   border-radius: 0%;
   width: 92%;
+  display: block;
 }
 
 .subnav:hover .subnav-button { /* hovering over the button */
-  background-color: rgb(188, 35, 89);
+  background-color: rgb(156, 38, 79);
+  display: block;
   border-radius: 12%;
 }
 
