@@ -134,6 +134,10 @@ footer a { /*footer links*/
   font-size: 10px;
 }
 
+.validcheck:hover {
+  background-color: #78767600; 
+}
+
 
 /*Headers General Formatting*/
 h1 {
@@ -346,6 +350,7 @@ input::placeholder {
 
 .submit-button:hover {
   background-color:  rgb(126, 31, 64); 
+  cursor: pointer;
 }
 
 .reset-button {
@@ -361,6 +366,7 @@ input::placeholder {
 
 .reset-button:hover {
   background-color: #787676; 
+  cursor: pointer;
 }
 
 
