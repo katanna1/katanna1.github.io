@@ -6,7 +6,7 @@ Styling for Wilson Enterprises Site <3
 
 /*General and Main Nav. Bar Formatting*/
 body {
-    background-color: #A4B494;
+    background-color: #b5caa2;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 3%;
@@ -16,21 +16,22 @@ body {
   
 .nav {
     color: rgb(0, 0, 0);
-    background-color: #BEC5AD;
+    background-color: #dce3cc;
     font-family: Tahoma;
     font-size: 22px;
     text-align: center;
     font-variant: all-small-caps;
-    letter-spacing: .8px;
+    letter-spacing: 1px;
+    word-spacing: 2px;;
     margin-right: 2%;
     margin-left: 2%;
-    border-style: ridge;
-    border-width: 2.5px;
+    border-style: solid;
+    border-width: 3.5px;
     border-color: #3B5249;
-    border-radius: 15%;
+    border-radius: 25%;
     margin-top: -2%;
     margin-bottom: 3%;
-    padding: 1.1%;
+    padding: 1%;
 }
 
   
@@ -61,6 +62,11 @@ footer a {
     text-decoration: none;
     font-family: Tahoma;
     font-size: 14px;
+}
+
+.validator:hover {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0%;
 }
 
 
@@ -125,7 +131,9 @@ h4 {
     font-weight: 100;
     text-align: center;
     margin-top: 4%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    margin-right: 0%;
+    margin-left: 0%;
     letter-spacing: 1.5px;
 }
 
@@ -149,6 +157,10 @@ body figcaption {
     margin-bottom: 1%;
 }
 
+footer img {
+    display: inline-block;
+}
+
 .headerlogo {
     max-width: 10%;
     max-height: 15%;
@@ -164,13 +176,12 @@ body figcaption {
     font-family: Tahoma;
     font-size: 18px;
     color: #292B31;
-    text-align: center;
     margin-right: 25%;
     margin-left: 25%;
-    padding: 2%;
-    background-color: #BEC5AD;
+    padding: 2.5%;
+    background-color: #dce3cc;
     border-style: solid;
-    border-width: 4px;
+    border-width: 5px;
     border-image: linear-gradient(to left top, #222b19, #4e573c) 1;
 }
 
