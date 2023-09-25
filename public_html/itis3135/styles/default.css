@@ -14,13 +14,13 @@ body {
   font-size: 14px;
   border: 2.8px solid black;
   border-radius: 25%;
-  border-right: 5px dotted black;
-  border-left: 5px dotted black;
+  border-right: 5.5px dotted black;
+  border-left: 5.5px dotted black;
   text-align: center;
   margin-top: -15px;
   margin-right: 1%;
   margin-left: 1%;
-  padding-top: 1%;
+  padding-top: 1.2%;
   padding-bottom: 1.5%;
   padding-left: .75%;
   padding-right: .75%;
@@ -69,6 +69,7 @@ body {
 /*Different Links Formatting*/
 a {
   border-radius: 12%;
+  padding: .4%;
 }
 
 .nav a { /*main nav. bar links*/
@@ -131,7 +132,7 @@ footer a { /*footer links*/
   text-decoration: none;
   letter-spacing: 1px;
   font-family: Didot;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .validcheck:hover {
@@ -238,14 +239,20 @@ main p {
 /*Footer Formatting*/
 footer {
   text-align: center;
+  background-color: rgba(255, 225, 236, 0.373);
+  margin-right: -5%;
+  margin-left: -5%;
+  margin-bottom: -5%;
+  padding-bottom: 1%;
 }
 
 footer p, .footercompany { /*copyright*/
   font-family: Didot;
-  font-size: 9px;
+  font-size: 10px;
   color: rgb(0, 0, 0);
   text-align: center;
-  letter-spacing: .4px;
+  letter-spacing: .8px;
+  padding: 0%;
 }
 
 footer img {
@@ -388,10 +395,10 @@ input::placeholder {
 }
 
 footer hr {
-  border-color: rgb(0, 0, 0);
-  border-width: .1px;
-  margin-right: 5%;
-  margin-left: 5%;
+  border-color: rgb(68, 7, 45);
+  border-width: 1px;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 
