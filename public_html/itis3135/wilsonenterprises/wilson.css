@@ -64,6 +64,11 @@ footer a {
     font-size: 14px;
 }
 
+footer a:hover {
+    background-color: #dce3cc5d;
+    padding: .2%;
+}
+
 .validator:hover {
     background-color: rgba(255, 255, 255, 0);
     padding: 0%;
@@ -205,9 +210,8 @@ ul li {
 /*<hr> Formatting*/
 .footerbreak {
     border-color: #222b19;
-    border-width: 1.4px;
-    margin-right: 2%;
-    margin-left: 2%;
+    border-width: 2.5px;
+    margin: 0% 0%;
 }
   
 
@@ -215,6 +219,9 @@ ul li {
 footer {
     text-align: center;
     padding-top: 1%;
+    background-color: #849e6cb9;
+    padding: 2.5%;
+    margin-bottom: -3%;
 }
 
 footer p {
