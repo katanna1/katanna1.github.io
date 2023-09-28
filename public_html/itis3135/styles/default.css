@@ -412,3 +412,24 @@ ul li {
   list-style: square;
   padding: .5%;
 }
+
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+  width: 7px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #ffffff;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: rgb(110, 14, 73);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: rgb(69, 9, 46);
+  }
