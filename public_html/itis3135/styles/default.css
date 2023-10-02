@@ -321,7 +321,7 @@ select { /*dropdown, select one*/
 }
 
 input::placeholder {
-  font-family: Didot;
+  font-family: didot;
   font-size: 14px;
 }
 

@@ -66,7 +66,28 @@
 <!-- MAIN -->
 <main>
     <h2>First Scripts</h2>
-    <p>*change me*</p>
+    <h3 style="text-align: center;">It is currently 
+        <script src="scripts/defaultscripts.js"></script>
+        <script>
+            printTime();
+        </script> on 
+        <script>
+            printDate();
+        </script>.
+    </h3>
+    <h4 style="margin-top: 3%">Please answer a couple questions for us!</h4>
+    <p>
+        <form action="PayslipServlet" method="get">
+            <label for="fname">First Name: </label>
+            <input required type="text" id="fname" name="fname" placeholder="Type answer here." size="20">
+            <br> <br>
+            <label for="mood">How are you feeling today?</label>
+            <input required type="text" id="mood" name="mood" placeholder="Type answer here." size="25">
+            <br><br>
+            <input type="button" value="Submit" onClick="getMood(form);">
+        </form>
+    </p>
+
 </main>
 
 
