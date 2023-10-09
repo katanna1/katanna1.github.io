@@ -187,6 +187,16 @@ h3 {
   margin-top: -15px;
 }
 
+.byotitle { /*h3 customized for BYO forms title*/
+  font-size: 22px;
+  font-family:  fantasy;
+  letter-spacing: 2px;
+  font-weight: 200;
+  margin-left: -2%;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+
 h4 {
   font-family: Didot;
   font-size: 18px;
@@ -342,6 +352,26 @@ input::placeholder {
   font-size: 14px;
 }
 
+textarea {
+  font-family: didot;
+  height:100px;
+  width: 60%;
+}
+
+.introForm #name, #mascot {
+  width:200px;
+}
+
+.introForm #courses {
+  width:300px;
+}
+
+.introForm #caption {
+  width:100%;
+}
+
+
+
 
 /*Form's Button Formatting*/
 .submit-button {
@@ -372,6 +402,38 @@ input::placeholder {
 }
 
 .reset-button:hover {
+  background-color: #787676; 
+  cursor: pointer;
+}
+
+.crs-add-button {
+  background-color: rgb(188, 32, 100);
+  border-color:  rgb(147, 31, 82);
+  height: 24px; 
+  width: 100px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family:  didot;
+  text-align: center;
+}
+
+.crs-add-button:hover {
+  background-color:  rgb(154, 33, 85); 
+  cursor: pointer;
+}
+
+.CRSdelete {
+  background-color: rgb(225, 214, 218);
+  border-color: #979797;
+  height: 22px; 
+  width: 80px;
+  font-size: 14px;
+  font-weight: 900;
+  font-family:  didot;
+  text-align: center;
+}
+
+.CRSdelete:hover {
   background-color: #787676; 
   cursor: pointer;
 }
@@ -422,19 +484,19 @@ ul li {
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
-  }
+}
 
   /* Track */
   ::-webkit-scrollbar-track {
   background: #ffffff;
-  }
+}
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
   background: rgb(110, 14, 73);
-  }
+}
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
   background: rgb(69, 9, 46);
-  }
+}

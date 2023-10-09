@@ -1,0 +1,118 @@
+<!-- **********
+Template for the rest of the ITIS-3135 pages. 
+(site with a pink color scheme)
+********** -->
+
+
+<!-- DOCTYPE and HEAD (only change title)-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 BYO Intro </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script src="scripts/survey.js"></script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
+
+    
+    <body>
+        <!-- HEADER -->
+        <div id="header"></div>
+
+        <!-- MAIN -->
+        <main>
+            <h2>BYO Intro</h2>
+            <h3>Create an Intro Page:</h3>
+            <p>It's time to create your own introduction page! Please fill out the 
+                form below to do so:
+            </p>
+
+            <form id="introForm" onsubmit="return validateForm()" class="introForm">
+                <h3 class="byotitle">General</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Katrina Wilson">
+                <br><br>
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" name="mascot" required placeholder="Klutzy Wasp">
+                <br><br>
+
+                <label for="image">Image (.png or .jpg):</label>
+                <input type="file" id="image" name="image" accept=".png, .jpg" required>
+                <br><br>
+                <label for="caption">Image Caption:</label><br>
+                <input type="text" id="caption" name="caption" required placeholder="Taken minutes before my friend locked her keys in the car and stranded us outside in the cold for hours >:(">
+                <br><br>
+
+                <hr class="smallbreak">
+                <h3 class="byotitle">Background</h3>
+
+                <label for="BCKpersonal">Personal Background:</label><br>
+                <textarea id="BCKpersonal" name="BCKpersonal" required placeholder="I was born and raised right here in Charlotte. I attended Chapel Hill before I transferred over here. I am a Virgo, vegetarian, and have two dogs and three cats. I also work with dogs, so I would say I really love animals! In my spare time, I like to go to concerts or go hiking."></textarea>
+                <br><br>
+                <label for="BCKprof">Professional Background:</label><br>
+                <textarea id="BCKprof" name="BCKprof" required placeholder="I currently work as a kennel technician, but have mostly worked in food service and retail."></textarea>
+                <br><br>
+                <label for="BCKacademic">Academic Background:</label><br>
+                <textarea id="BCKacademic" name="BCKacademic" required placeholder= "I am a Junior at UNCC pursuing a BS in Computer Science, with a concentration in Cybersecurity."></textarea>
+                <br><br>
+
+                <hr class="smallbreak">
+                <h3 class="byotitle">Field Specific</h3>
+
+                <label for="BCKweb">Web Development Background:</label><br>
+                <textarea id="BCKweb" name="BCKweb" required placeholder="My dad works in the computer science field, and cybersecurity has always particularly interested me. Minimal experience before college though."></textarea>
+                <br><br>
+                <label for="primaryP">Primary Computer Platform:</label>
+                <input type="text" id="primaryP" name="primaryP" required placeholder="Windows 11">
+                <br><br>
+
+                <label for="courses">Courses currently taking: </label>
+                <div id="CRSform">
+                    <input type="text" id="courses" name="courses[]" required placeholder="ITSC 2181: Intro to Computer Systems">
+                    <button class="crs-add-button" type="button" onclick="addCourse()">Add Course</button>
+                </div> <br><br>
+
+                <hr class="smallbreak">
+                <h3 class="byotitle">Other</h3>
+
+                <label for="funny">Funny/Interesting Thing:</label><br>
+                <textarea id="funny" name="funny" placeholder="My mom is from Russia so I speak Russian fluently!"></textarea>
+                <br><br>
+                <label for="anything">Anything Else:</label><br>
+                <textarea id="anything" name="anything" placeholder="I love music and am always listening to some. Mostly heavy metal, punk rock, and old emo music…always down for a concert to burst my eardrums!!"></textarea>
+                <br><br>
+
+                <hr class="smallbreak">
+                <h3 class="byotitle">Privacy Agreement</h3>
+                
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+                <br><br>
+
+                <input type="submit" value="Submit" class="submit-button">
+                <input type="reset" value="Reset" class="reset-button" onclick="resetForm()" href="#">
+            </form>
+
+           
+            <div id="final"></div>
+
+
+        </main>
+
+
+
+        <!-- FOOTER -->
+        <div id="footer"></div>
+    </body>
+</html>
