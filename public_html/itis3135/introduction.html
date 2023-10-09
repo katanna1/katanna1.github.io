@@ -1,128 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katrina Wilson ⚊ ITIS 3135 Introduction </title>
-    <link rel="stylesheet" href ="styles/default.css">
-</head>
-
-
-<body>
-    <header>
-        <h1>Katrina Wilson ⚊ ITIS 3135 </h1>
-        <p>✦ Klutzy Wasp ✦</p>
-        <nav class="nav"> 
-            <a href="./"> Home</a>
-            ❤
-            <a href="introduction.html"> Introduction</a>
-            ❤
-            <a href="contract.html"> Contract</a>
-            ❤        
-            <a href="https://webpages.charlotte.edu/kwils178/"> Back to Main Site</a>
-            ❤
-            <!--Dropdown: all HTML work-->
-            <div class="subnav">
-                <button class="subnav-button">Html<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="tables.html"> Html Tables</a>
-                    <a href="forms.html"> Html Forms</a>
-                    <a href="website_evaluations.html"> Website Evalulation</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Project work-->
-            <div class="subnav">
-                <button class="subnav-button">Project<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="project_1.html"> Project 1</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all JavaScript work-->
-            <div class="subnav">
-                <button class="subnav-button">JScript<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="firstscripts.html"> First Scripts</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Other work, that is not connected to this one-->
-            <div class="subnav">
-                <button class="subnav-button"> Other<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a target="_blank" href="wilsonenterprises/index.html">Wilson Enterprises</a>
-                    <a target="_blank" href="stuff/my❀aMaZiNg(ish)꧂file.htm">Crappy Page</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Home </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
 
     
-    
-<main>
-    <h2>Introduction</h2>
-    <figure>
-    <img style="border:0;width:20%;height:20%" src="images/intropic.png" alt="Picture of me in front of a Xmas tree."> 
-    <figcaption>Taken minutes before my friend locked her keys in the car and stranded us outside in the cold for hours >:(</figcaption>
-    </figure>
+    <body>
+        <!-- HEADER -->
+        <div id="header"></div>
 
-    <h3 style="margin-top: 10px">About Me:</h3>
-    <h4>Background:</h4>
-    <ul>
-        <li><b>Personal:</b> I was born and raised right here in Charlotte. I attended Chapel Hill before I transferred over here. I am a Virgo, vegetarian, and have two dogs and three cats. I also work with dogs, so I would say I really love animals! In my spare time, I like to go to concerts or go hiking.</li>
-        <li><b>Professional:</b> I currently work as a kennel technician, but have mostly worked in food service and retail.</li>
-        <li><b>Academic:</b>  I am a Junior at UNCC pursuing a BS in Computer Science, with a concentration in Cybersecurity.</li>
-    </ul>
+        <!-- MAIN -->   
+        <main>
+            <h2>Introduction</h2>
+            <figure>
+            <img style="border:0;width:20%;height:20%" src="images/intropic.png" alt="Picture of me in front of a Xmas tree."> 
+            <figcaption>Taken minutes before my friend locked her keys in the car and stranded us outside in the cold for hours >:(</figcaption>
+            </figure>
 
-    <h4>Field Specific:</h4>
-    <ul>
-        <li><b>Background in this Subject:</b>  My dad works in the computer science field, and cybersecurity has always particularly interested me. Minimal experience before college though.</li>
-        <li><b>Primary Computer Platform:</b> Windows 11</li>
-        <li><b>Enrolled Courses:</b>
-            <ul style="margin-top: .5%; margin-bottom: -1%;">
-            <li>STAT 2122: Intro to Probability and Statistics</li>
-            <li>ITSC 2181: Intro to Computer Systems</li>
-            <li>ITIS 3200: Intro to Info Security and Privacy</li>
-            <li>ITSC 3146: Intro Operating Systems and Networking</li>
-            <li>ITIS 3135: Web-Based Application Design and Development</li>
-        </ul>
-    </ul>
+            <h3 style="margin-top: 10px">About Me:</h3>
+            <h4>Background:</h4>
+            <ul>
+                <li><b>Personal:</b> I was born and raised right here in Charlotte. I attended Chapel Hill before I transferred over here. I am a Virgo, vegetarian, and have two dogs and three cats. I also work with dogs, so I would say I really love animals! In my spare time, I like to go to concerts or go hiking.</li>
+                <li><b>Professional:</b> I currently work as a kennel technician, but have mostly worked in food service and retail.</li>
+                <li><b>Academic:</b>  I am a Junior at UNCC pursuing a BS in Computer Science, with a concentration in Cybersecurity.</li>
+            </ul>
 
-    <h4>Other:</h4>
-    <ul>
-        <li><b>Interesting Item to Remember me by: </b>My mom is from Russia so I speak Russian fluently!</li>
-        <li><b>I'd also like to Share:</b> I love music and am always listening to some. Mostly heavy metal, punk rock, and old emo music…always down for a concert to burst my eardrums!!</li>
-    </ul>
-</main>
+            <h4>Field Specific:</h4>
+            <ul>
+                <li><b>Background in this Subject:</b>  My dad works in the computer science field, and cybersecurity has always particularly interested me. Minimal experience before college though.</li>
+                <li><b>Primary Computer Platform:</b> Windows 11</li>
+                <li><b>Enrolled Courses:</b>
+                    <ul style="margin-top: .5%; margin-bottom: -1%;">
+                    <li>STAT 2122: Intro to Probability and Statistics</li>
+                    <li>ITSC 2181: Intro to Computer Systems</li>
+                    <li>ITIS 3200: Intro to Info Security and Privacy</li>
+                    <li>ITSC 3146: Intro Operating Systems and Networking</li>
+                    <li>ITIS 3135: Web-Based Application Design and Development</li>
+                </ul>
+            </ul>
 
-<!-- FOOTER NO CHANGE-->
-<br>
-<footer> 
-<hr>
-<nav class="navfoot"> 
-    <a target="_blank" href="https://webpages.charlotte.edu/kwils178/"> Charlotte.edu</a>
-    •
-    <a target="_blank" href="https://github.com/katanna1/katanna1.github.io"> Repository</a>
-    •
-    <a target="_blank" href="https://katanna1.github.io/"> Github.io</a>
-    •
-    <a target="_blank" href="https://www.freecodecamp.org/katrinawilson"> FreeCodeCamp</a>
-    •
-    <a target="_blank" href="https://www.codecademy.com/profiles/katrinawilson"> CodeAcademy</a>
-    •
-    <a target="_blank" href="https://www.linkedin.com/in/katrina-wilson-40642a251/"> LinkedIn</a>
-</nav>
-<p>Copyright © 2023 <a target="_blank" href="wilsonenterprises/index.html" class="footercompany">Wilson Enterprises</a></p>
-<a class="validcheck" target="_blank" href="https://validator.w3.org/check?uri=referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413" alt="Valid HTML!">
-    </a> 
-    <a class="validcheck" target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
-    CSS!">
-    </a>
-</footer>
-</body>
+            <h4>Other:</h4>
+            <ul>
+                <li><b>Interesting Item to Remember me by: </b>My mom is from Russia so I speak Russian fluently!</li>
+                <li><b>I'd also like to Share:</b> I love music and am always listening to some. Mostly heavy metal, punk rock, and old emo music…always down for a concert to burst my eardrums!!</li>
+            </ul>
+        </main>
+
+        <!-- FOOTER -->
+        <div id="footer"></div>
+    </body>
 </html>
+

@@ -3,116 +3,43 @@
 <!-- HTML (only change title)-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katrina Wilson ⚊ ITIS 3135 Home </title>
-    <link rel="stylesheet" href ="styles/default.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Home </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
 
 
-<!-- HEADER NO CHANGE-->
-<body>
-    <header>
-        <h1>Katrina Wilson ⚊ ITIS 3135 </h1>
-        <p>✦ Klutzy Wasp ✦</p>
-        <nav class="nav"> 
-            <a href="./"> Home</a>
-            ❤
-            <a href="introduction.html"> Introduction</a>
-            ❤
-            <a href="contract.html"> Contract</a>
-            ❤        
-            <a href="https://webpages.charlotte.edu/kwils178/"> Back to Main Site</a>
-            ❤
-            <!--Dropdown: all HTML work-->
-            <div class="subnav">
-                <button class="subnav-button">Html<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="tables.html"> Html Tables </a>
-                    <a href="forms.html"> Html Forms </a>
-                    <a href="website_evaluations.html"> Website Evalulation</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Project work-->
-            <div class="subnav">
-                <button class="subnav-button">Project<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="project_1.html"> Project 1</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all JavaScript work-->
-            <div class="subnav">
-                <button class="subnav-button">JScript<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="firstscripts.html"> First Scripts</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Other work, that is not connected to this one-->
-            <div class="subnav">
-                <button class="subnav-button"> Other<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a target="_blank" href="wilsonenterprises/index.html">Wilson Enterprises</a>
-                    <a target="_blank" href="stuff/my❀aMaZiNg(ish)꧂file.htm">Crappy Page</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <body>
+        <div id="header"></div>
+        <main>
+            <h2>Home</h2>
+            <h3>Welcome to my ITIS-3135 Website!</h3>
+            <p>Please explore the site by using the navigation bar above. Below is a summary of what is in each sub-menu:</p>
+                <ul style="margin: 0% 5%; margin-top: -1%;">
+                    <li><strong>HTML: </strong>contains all HTML assignments.</li>
+                    <li><strong>Project: </strong>contains all assignments related to the Client Project.</li>
+                    <li><strong>JScript: </strong>contains all JavaScript assignments.</li>
+                    <li><strong>Other: </strong>contains all assignments not connected to this site (i.e. Company Page, Crappy Page, etc).</li>
+                </ul>
+            <p>To see additional links  required by this course, see the footer below. </p>
+            <h4 style="font-size: 24px; text-align: center;">Thank you for stopping by!</h4>
+            <img style="width:100px; display:block; margin-top: 3%;" src="wilsonenterprises/images/wasp-nicepng.com.png" alt="Wasp logo.">
+        </main>
 
-    
-
-
-
-<!-- MAIN -->
-<main>
-    <h2>Home</h2>
-    <h3>Welcome to my ITIS-3135 Website!</h3>
-    <p>Please explore the site by using the navigation bar above. Below is a summary of what is in each sub-menu:</p>
-        <ul style="margin: 0% 5%; margin-top: -1%;">
-            <li><strong>HTML: </strong>contains all HTML assignments.</li>
-            <li><strong>Project: </strong>contains all assignments related to the Client Project.</li>
-            <li><strong>JScript: </strong>contains all JavaScript assignments.</li>
-            <li><strong>Other: </strong>contains all assignments not connected to this site (i.e. Company Page, Crappy Page, etc).</li>
-        </ul>
-    <p>To see additional links  required by this course, see the footer below. </p>
-    <h4 style="font-size: 24px; text-align: center;">Thank you for stopping by!</h4>
-    <img style="width:100px; display:block; margin-top: 3%;" src="wilsonenterprises/images/wasp-nicepng.com.png" alt="Wasp logo.">
-</main>
-
-
-
-<!-- FOOTER NO CHANGE-->
-<br>
-<footer> 
-<hr>
-<nav class="navfoot"> 
-    <a target="_blank" href="https://webpages.charlotte.edu/kwils178/"> Charlotte.edu</a>
-    •
-    <a target="_blank" href="https://github.com/katanna1/katanna1.github.io"> Repository</a>
-    •
-    <a target="_blank" href="https://katanna1.github.io/"> Github.io</a>
-    •
-    <a target="_blank" href="https://www.freecodecamp.org/katrinawilson"> FreeCodeCamp</a>
-    •
-    <a target="_blank" href="https://www.codecademy.com/profiles/katrinawilson"> CodeAcademy</a>
-    •
-    <a target="_blank" href="https://www.linkedin.com/in/katrina-wilson-40642a251/"> LinkedIn</a>
-</nav>
-<p>Copyright © 2023 <a target="_blank" href="wilsonenterprises/index.html" class="footercompany">Wilson Enterprises</a></p>
-<a class="validcheck" target="_blank" href="https://validator.w3.org/check?uri=referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413" alt="Valid HTML!">
-</a> 
-<a class="validcheck" target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
-    CSS!">
-</a>
-</footer>
-</body>
+        <div id="footer"></div>
+    </body>
 </html>
 
 

@@ -2,181 +2,112 @@
 <!-- HTML (only change title)-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katrina Wilson ⚊ ITIS 3135 Forms </title>
-    <link rel="stylesheet" href ="styles/default.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Home </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
+
+    
+    <body>
+        <!-- HEADER -->
+        <div id="header"></div>
+
+        <!-- MAIN -->
+        <main>
+            <h2>HTML Forms</h2>
+                <h3 class="formstitle">Customer Feedback Form:</h3>
+                <form action="#">
+                    <br>
+                    <label for="fname">First Name: </label>
+                    <input required type="text" id="fname" name="fname" placeholder="Jane (required)" size="20"><br><br>
+                    <label for="lname">Last Name: </label>
+                    <input required type="text" id="lname" name="lname" placeholder="Doe (required)" size="20"><br><br>
+                
+                    <label for="phone">Home Phone Number: </label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" size="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                    <label for="mphone">Mobile Phone Number: </label>
+                    <input type="tel" id="mphone" name="mphone" placeholder="123-456-7890" size="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                
+                    <label for="email">Email Address: </label>
+                    <input required type="email" id="email" name="email" placeholder="abcde@email.com (required)" size="25"><br><br>
+                
 
 
-<!-- HEADER NO CHANGE-->
-<body>
-    <header>
-        <h1>Katrina Wilson ⚊ ITIS 3135 </h1>
-        <p>✦ Klutzy Wasp ✦</p>
-        <nav class="nav"> 
-            <a href="./"> Home</a>
-            ❤
-            <a href="introduction.html"> Introduction</a>
-            ❤
-            <a href="contract.html"> Contract</a>
-            ❤        
-            <a href="https://webpages.charlotte.edu/kwils178/"> Back to Main Site</a>
-            ❤
-            <!--Dropdown: all HTML work-->
-            <div class="subnav">
-                <button class="subnav-button">Html<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="tables.html"> Html Tables</a>
-                    <a href="forms.html"> Html Forms</a>
-                    <a href="website_evaluations.html"> Website Evalulation</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Project work-->
-            <div class="subnav">
-                <button class="subnav-button">Project<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="project_1.html"> Project 1</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all JavaScript work-->
-            <div class="subnav">
-                <button class="subnav-button">JScript<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="firstscripts.html"> First Scripts</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Other work, that is not connected to this one-->
-            <div class="subnav">
-                <button class="subnav-button"> Other<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a target="_blank" href="wilsonenterprises/index.html">Wilson Enterprises</a>
-                    <a target="_blank" href="stuff/my❀aMaZiNg(ish)꧂file.htm">Crappy Page</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-
-
-<!-- MAIN -->
-<main>
-    <h2>HTML Forms</h2>
-        <h3 class="formstitle">Customer Feedback Form:</h3>
-        <form action="#">
-            <br>
-            <label for="fname">First Name: </label>
-            <input required type="text" id="fname" name="fname" placeholder="Jane (required)" size="20"><br><br>
-            <label for="lname">Last Name: </label>
-            <input required type="text" id="lname" name="lname" placeholder="Doe (required)" size="20"><br><br>
-        
-            <label for="phone">Home Phone Number: </label>
-            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" size="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
-            <label for="mphone">Mobile Phone Number: </label>
-            <input type="tel" id="mphone" name="mphone" placeholder="123-456-7890" size="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
-        
-            <label for="email">Email Address: </label>
-            <input required type="email" id="email" name="email" placeholder="abcde@email.com (required)" size="25"><br><br>
-        
-
-
-            <!--checkbox-->
-            <label>Preferred Method(s) of Contact: </label><br>
-            <input type="checkbox" id="emailcont" name="contact" value="email">
-            <label for="emailcont">Email</label><br>
-            <input type="checkbox" id="phonecont" name="contact" value="phone">
-            <label for="phonecont">Home Phone</label><br>
-            <input type="checkbox" id="mphonecont" name="contact" value="mphone">
-            <label for="mphonecont">Mobile Phone</label><br>
-            <input type="checkbox" id="facecont" name="contact" value="face">
-            <label for="facecont">Face-to-Face</label><br>
-            <input type="checkbox" id="othercontac" name="contact" value="other">
-            <label for="othercont">Other: <input type="text" id="othercont" name="contact" placeholder="Please specify here." size="20"></label>
-           <br><br><hr class="formbreak"><br>
-            
-
-            <!--drop down-->
-            <label for="topic">Main Reason for Contact:</label>
-            <select id="topic" name="topic">
-                <option value="quotes">Pricing and Quotes</option>
-                <option value="timeline">Project Timeline</option>
-                <option value="special">Special Requests</option>
-                <option value="avail">Availability</option>
-                <option value="appointment">Schedule an Appointment</option>
-                <option value="career">Career Opportunities</option>
-                <option value="feedback">General Feedback</option>
-                <option value="billing">Billing Issues</option>
-                <option value="legal">Legal/Copyright</option>
-                <option value="tech">Technical Support</option>
-                <option value="other">Other</option>
-            </select><br>
-
-            <label style="margin-left:5%; font-size: 14px" for="other">If you chose <b>Other</b> above, please elaborate: </label><br>
-            <textarea class="otherspec" id="contact-other-large" name="contact" placeholder="The more detailed your response, the better we can assist you!"></textarea><br><br>
-
-            
-                        <!--radio-->
-                        <label>How did you hear about us?</label><br>
-                        <input type="radio" id="wom" name="hear" value="wom">
-                        <label for="wom">Word of Mouth</label><br>
-                        <input type="radio" id="social" name="hear" value="social">
-                        <label for="social">Social Media</label><br>
-                        <input type="radio" id="tv" name="hear" value="tv">
-                        <label for="tv">Television</label><br>
-                        <input type="radio" id="ad" name="hear" value="ad">
-                        <label for="ad">Advertisement</label><br>
-                        <input type="radio" id="inter" name="hear" value="inter">
-                        <label for="inter">Internet Seach (Google, Bing, etc.)</label><br>
-                        <input type="radio" id="rev" name="hear" value="rev">
-                        <label for="rev">Third-Party Review</label><br>
-                        <input type="radio" id="other" name="hear" value="otherhear">
-                        <label for="otherhear">Other: </label><input type="text" id="otherhear" name="contact" placeholder="Please specify here." size="20">
-                        <br><br>
-            
-                        <label for="other">Is there anything else you'd like to share, ask, or tell us? </label><br>
-                        <textarea class="feedback" id="contact-other-textarea" name="contact" placeholder="Please include anything you feel is important for us to know."></textarea><br><br>
+                    <!--checkbox-->
+                    <label>Preferred Method(s) of Contact: </label><br>
+                    <input type="checkbox" id="emailcont" name="contact" value="email">
+                    <label for="emailcont">Email</label><br>
+                    <input type="checkbox" id="phonecont" name="contact" value="phone">
+                    <label for="phonecont">Home Phone</label><br>
+                    <input type="checkbox" id="mphonecont" name="contact" value="mphone">
+                    <label for="mphonecont">Mobile Phone</label><br>
+                    <input type="checkbox" id="facecont" name="contact" value="face">
+                    <label for="facecont">Face-to-Face</label><br>
+                    <input type="checkbox" id="othercontac" name="contact" value="other">
+                    <label for="othercont">Other: <input type="text" id="othercont" name="contact" placeholder="Please specify here." size="20"></label>
+                <br><br><hr class="formbreak"><br>
                     
-                        <input type="reset" value="Reset" class="reset-button">
-                        <input type="submit" value="Submit" class="submit-button">
+
+                    <!--drop down-->
+                    <label for="topic">Main Reason for Contact:</label>
+                    <select id="topic" name="topic">
+                        <option value="quotes">Pricing and Quotes</option>
+                        <option value="timeline">Project Timeline</option>
+                        <option value="special">Special Requests</option>
+                        <option value="avail">Availability</option>
+                        <option value="appointment">Schedule an Appointment</option>
+                        <option value="career">Career Opportunities</option>
+                        <option value="feedback">General Feedback</option>
+                        <option value="billing">Billing Issues</option>
+                        <option value="legal">Legal/Copyright</option>
+                        <option value="tech">Technical Support</option>
+                        <option value="other">Other</option>
+                    </select><br>
+
+                    <label style="margin-left:5%; font-size: 14px" for="other">If you chose <b>Other</b> above, please elaborate: </label><br>
+                    <textarea class="otherspec" id="contact-other-large" name="contact" placeholder="The more detailed your response, the better we can assist you!"></textarea><br><br>
+
                     
-        </form>
-    </main>
+                                <!--radio-->
+                                <label>How did you hear about us?</label><br>
+                                <input type="radio" id="wom" name="hear" value="wom">
+                                <label for="wom">Word of Mouth</label><br>
+                                <input type="radio" id="social" name="hear" value="social">
+                                <label for="social">Social Media</label><br>
+                                <input type="radio" id="tv" name="hear" value="tv">
+                                <label for="tv">Television</label><br>
+                                <input type="radio" id="ad" name="hear" value="ad">
+                                <label for="ad">Advertisement</label><br>
+                                <input type="radio" id="inter" name="hear" value="inter">
+                                <label for="inter">Internet Seach (Google, Bing, etc.)</label><br>
+                                <input type="radio" id="rev" name="hear" value="rev">
+                                <label for="rev">Third-Party Review</label><br>
+                                <input type="radio" id="other" name="hear" value="otherhear">
+                                <label for="otherhear">Other: </label><input type="text" id="otherhear" name="contact" placeholder="Please specify here." size="20">
+                                <br><br>
+                    
+                                <label for="other">Is there anything else you'd like to share, ask, or tell us? </label><br>
+                                <textarea class="feedback" id="contact-other-textarea" name="contact" placeholder="Please include anything you feel is important for us to know."></textarea><br><br>
+                            
+                                <input type="reset" value="Reset" class="reset-button">
+                                <input type="submit" value="Submit" class="submit-button">             
+                </form>
+        </main>
 
 
-
-
-<!-- FOOTER NO CHANGE-->
-<br>
-<footer>
-<hr>
-<nav class="navfoot"> 
-    <a target="_blank" href="https://webpages.charlotte.edu/kwils178/"> Charlotte.edu</a>
-    •
-    <a target="_blank" href="https://github.com/katanna1/katanna1.github.io"> Repository</a>
-    •
-    <a target="_blank" href="https://katanna1.github.io/"> Github.io</a>
-    •
-    <a target="_blank" href="https://www.freecodecamp.org/katrinawilson"> FreeCodeCamp</a>
-    •
-    <a target="_blank" href="https://www.codecademy.com/profiles/katrinawilson"> CodeAcademy</a>
-    •
-    <a target="_blank" href="https://www.linkedin.com/in/katrina-wilson-40642a251/"> LinkedIn</a>
-</nav>
-<p>Copyright © 2023 <a target="_blank" href="wilsonenterprises/index.html" class="footercompany">Wilson Enterprises</a></p>
-<a class="validcheck" target="_blank" href="https://validator.w3.org/check?uri=referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413" alt="Valid HTML!">
-    </a> 
-    <a class="validcheck" target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
-    CSS!">
-    </a>
-</footer>
-</body>
+        <!-- FOOTER -->
+        <div id="footer"></div>
+    </body>
 </html>

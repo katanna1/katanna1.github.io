@@ -1,124 +1,67 @@
 <!-- HTML (only change title)-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katrina Wilson ⚊ ITIS 3135 First Scripts </title>
-    <link rel="stylesheet" href ="styles/default.css">
-</head>
-
-
-<!-- HEADER NO CHANGE-->
-<body>
-    <header>
-        <h1>Katrina Wilson ⚊ ITIS 3135 </h1>
-        <p>✦ Klutzy Wasp ✦</p>
-        <nav class="nav"> 
-            <a href="./"> Home</a>
-            ❤
-            <a href="introduction.html"> Introduction</a>
-            ❤
-            <a href="contract.html"> Contract</a>
-            ❤        
-            <a href="https://webpages.charlotte.edu/kwils178/"> Back to Main Site</a>
-            ❤
-            <!--Dropdown: all HTML work-->
-            <div class="subnav">
-                <button class="subnav-button">Html<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="tables.html"> Html Tables</a>
-                    <a href="forms.html"> Html Forms</a>
-                    <a href="website_evaluations.html"> Website Evalulation</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Project work-->
-            <div class="subnav">
-                <button class="subnav-button">Project<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="project_1.html"> Project 1</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all JavaScript work-->
-            <div class="subnav">
-                <button class="subnav-button">JScript<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="firstscripts.html"> First Scripts</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Other work, that is not connected to this one-->
-            <div class="subnav">
-                <button class="subnav-button"> Other<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a target="_blank" href="wilsonenterprises/index.html">Wilson Enterprises</a>
-                    <a target="_blank" href="stuff/my❀aMaZiNg(ish)꧂file.htm">Crappy Page</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-
-
-<!-- MAIN -->
-<main>
-    <h2>First Scripts</h2>
-    <h3 style="text-align: center;">It is currently 
-        <script src="scripts/defaultscripts.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Home </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
         <script>
-            printTime();
-        </script> on 
-        <script>
-            printDate();
-        </script>.
-    </h3>
-    <h4 style="margin-top: 2%">Please answer a couple questions for us!</h4>
-    <p>
-        <form action="PayslipServlet" method="get">
-            <label for="fname">First Name: </label>
-            <input required type="text" id="fname" name="fname" placeholder="Type answer here." size="20">
-            <br> <br>
-            <label for="mood">How are you feeling today?</label>
-            <input required type="text" id="mood" name="mood" placeholder="Type answer here." size="25">
-            <br><br>
-            <input type="button" value="Submit" onClick="getMood(form);">
-        </form>
-    </p>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
 
-</main>
+    
+    <body>
+        <!-- HEADER -->
+        <div id="header"></div>
+
+        <!-- MAIN -->
+        <main>
+            <h2>First Scripts</h2>
+            <h3 style="text-align: center;">It is currently 
+                <script src="scripts/defaultscripts.js"></script>
+                <script>
+                    printTime();
+                </script> on 
+                <script>
+                    printDate();
+                </script>.
+            </h3>
+            <h4 style="margin-top: 2%">Please answer a couple questions for us!</h4>
+            <p> vdflsfl
+                <form action="PayslipServlet" method="get">
+                    <label for="fname">First Name: </label>
+                    <input required type="text" id="fname" name="fname" placeholder="Type answer here." size="20">
+                    <br> <br>
+                    <label for="mood">How are you feeling today?</label>
+                    <input required type="text" id="mood" name="mood" placeholder="Type answer here." size="25">
+                    <br><br>
+                    <input type="button" value="Submit" onClick="getMood(form)">
+            
+                </form>
+
+            </p>
+            <button type="button"
+            onclick="document.getElementById('demo').innerHTML = updateGreeting()">
+            Click me to display Date and Time.</button>
+            
+            <p id="demo"></p>
+            
+
+        </main>
 
 
 
-<!-- FOOTER NO CHANGE-->
-<br>
-<footer> 
-<hr>
-<nav class="navfoot"> 
-    <a target="_blank" href="https://webpages.charlotte.edu/kwils178/"> Charlotte.edu</a>
-    •
-    <a target="_blank" href="https://github.com/katanna1/katanna1.github.io"> Repository</a>
-    •
-    <a target="_blank" href="https://katanna1.github.io/"> Github.io</a>
-    •
-    <a target="_blank" href="https://www.freecodecamp.org/katrinawilson"> FreeCodeCamp</a>
-    •
-    <a target="_blank" href="https://www.codecademy.com/profiles/katrinawilson"> CodeAcademy</a>
-    •
-    <a target="_blank" href="https://www.linkedin.com/in/katrina-wilson-40642a251/"> LinkedIn</a>
-</nav>
-<p>Copyright © 2023 <a target="_blank" href="wilsonenterprises/index.html" class="footercompany">Wilson Enterprises</a></p>
-<a class="validcheck" target="_blank" href="https://validator.w3.org/check?uri=referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413" alt="Valid HTML!">
-    </a> 
-    <a class="validcheck" target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
-    CSS!">
-    </a>
-</footer>
-</body>
+        <!-- FOOTER -->
+        <div id="footer"></div>
+    </body>
 </html>
+

@@ -1,209 +1,144 @@
 <!-- HTML (only change title)-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katrina Wilson ⚊ ITIS 3135 Project 1 </title>
-    <link rel="stylesheet" href ="styles/default.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Home </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
 
-<!-- HEADER NO CHANGE-->
-<body>
-    <header>
-        <h1>Katrina Wilson ⚊ ITIS 3135 </h1>
-        <p>✦ Klutzy Wasp ✦</p>
-        <nav class="nav"> 
-            <a href="./"> Home</a>
-            ❤
-            <a href="introduction.html"> Introduction</a>
-            ❤
-            <a href="contract.html"> Contract</a>
-            ❤        
-            <a href="https://webpages.charlotte.edu/kwils178/"> Back to Main Site</a>
-            ❤
-            <!--Dropdown: all HTML work-->
-            <div class="subnav">
-                <button class="subnav-button">Html<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="tables.html"> Html Tables</a>
-                    <a href="forms.html"> Html Forms</a>
-                    <a href="website_evaluations.html"> Website Evalulation</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Project work-->
-            <div class="subnav">
-                <button class="subnav-button">Project<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="project_1.html"> Project 1</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all JavaScript work-->
-            <div class="subnav">
-                <button class="subnav-button">JScript<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a href="firstscripts.html"> First Scripts</a>
-                </div>
-            </div>
-            ❤
-            <!--Dropdown: all Other work, that is not connected to this one-->
-            <div class="subnav">
-                <button class="subnav-button"> Other<i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                    <a target="_blank" href="wilsonenterprises/index.html">Wilson Enterprises</a>
-                    <a target="_blank" href="stuff/my❀aMaZiNg(ish)꧂file.htm">Crappy Page</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+    
+    <body>
+        <!-- HEADER -->
+        <div id="header"></div>
 
+        <!-- MAIN -->
+        <main>
+            <h2>Project 1</h2>
+            <h3>Project Name: Nails by Nami</h3>
+            <h4>Project Overview:</h4>
+            <p>The purpose of this site is to advertise the services provided by my client, as well as provide and avenue for 
+                customers to book with her. The main goal of the site, is to expand her business and help her promote herself 
+                and showcase her work.
+            </p>
+            <h4>Client Information:</h4>
+            <p><strong>Client Name: </strong> Ngoai Siu <br>
+                <strong>Organization/Institute/Business Associated With: </strong>NC Nails Academy <br>
+                <strong>Client's Email Address: </strong> [private] <br>
+                <strong>Client's Phone Number: </strong> (980) - 337 - 8271
+                
+            </p>
+            <h4>Wireframe: </h4>
+            <figure>
+                <img style="width:600px; padding-top:2%;" src="images/wireframefin.png">
+            </figure>
+            <figcaption>A wireframe showcasing my clients website. The navigation bar will be locked 
+                onto the left of the screen. 
+            </figcaption>
 
+            <h4>Site Map:</h4>
+            <figure>
+                <img style="width:600px; padding-top:2%;" src="images/Sitemap.drawio.png">
+            </figure>
+            <figcaption>A map of my clients site. The middle box is the title of the site, and the default main page (home).</figcaption>
 
-<!-- MAIN -->
-<main>
-    <h2>Project 1</h2>
-    <h3>Project Name: Nails by Nami</h3>
-    <h4>Project Overview:</h4>
-    <p>The purpose of this site is to advertise the services provided by my client, as well as provide and avenue for 
-        customers to book with her. The main goal of the site, is to expand her business and help her promote herself 
-        and showcase her work.
-    </p>
-    <h4>Client Information:</h4>
-    <p><strong>Client Name: </strong> Ngoai Siu <br>
-        <strong>Organization/Institute/Business Associated With: </strong>NC Nails Academy <br>
-        <strong>Client's Email Address: </strong> [private] <br>
-        <strong>Client's Phone Number: </strong> (980) - 337 - 8271
+            <h4>Page Design: </h4>
+            <p>Below is a comprehensive list of information for all pages that will be on my clients site:
+            </p>
+            <ul>
+                <li>Homepage</li>
+                <ul style="margin-top:0%">
+                    <li class="sublist"><strong>Purpose: </strong>The purpose of this page is to be the main entry for the site.
+                        This page will only have information regarding the site itself, and its navigation.</li>
+                    <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
+                    <li class="sublist"><strong>Content: </strong>The page will include a welcome message, as it is the first thing
+                        users will see. It will also include any relevant information regarding the websites navigation.</li>
+                    <li class="sublist"><strong>Data Entry/Fields: </strong>This page will not require any data.</li>
+                    <li class="sublist"><strong>Buttons/Hyperlinks: </strong>Other than the navigation bar, none.</li>
+                    <li class="sublist"><strong>Actions: </strong>None. </li>
+                    <li class="sublist"><strong>Special Notes: </strong>None. </li>
+                </ul>
+                <li>About</li>
+                <ul style="margin-top:0%">
+                    <li class="sublist"><strong>Purpose: </strong>The purpose about this page is to provide the user with relevant 
+                        information about my client and her business. This includes her education, experience, and some other facts 
+                        about her, for a personal touch. </li>
+                    <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
+                    <li class="sublist"><strong>Content: </strong>This page will include the backstory of my client and her business. 
+                        So her education, experience, and any facts about her business that are important for the customer to know.</li>
+                    <li class="sublist"><strong>Data Entry/Fields: </strong>None.</li>
+                    <li class="sublist"><strong>Buttons/Hyperlinks: </strong>None.</li>
+                    <li class="sublist"><strong>Actions: </strong>None. </li>
+                    <li class="sublist"><strong>Special Notes: </strong>None.</li>
+                </ul>
+                <li>Services Provided</li>
+                <ul style="margin-top:0%">
+                    <li class="sublist"><strong>Purpose: </strong>This page will show customers services that my client provides, the main 
+                        part of her business.</li>
+                    <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
+                    <li class="sublist"><strong>Content: </strong>This page will include a comprehensive list of all services provided, including costs and time. This 
+                        will also encompass her highlighted skills and techniques, that she is most known for. This page will also include any 
+                        relevant information for appointments, such as deposits, late fees, etc.</li>
+                    <li class="sublist"><strong>Data Entry/Fields: </strong>None.</li>
+                    <li class="sublist"><strong>Buttons/Hyperlinks: </strong>There will be a button to the 'Make an Appointment' page, below the appointment information.</li>
+                    <li class="sublist"><strong>Actions: </strong>When the user clicks on the button, they a new page will open in a new tab. No data transfered at this point.</li>
+                    <li class="sublist"><strong>Special Notes: </strong>None.</li>
+                </ul>
+                <li>Portfolio</li>
+                <ul style="margin-top:0%">
+                    <li class="sublist"><strong>Purpose: </strong>To showcase my clients work.</li>
+                    <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
+                    <li class="sublist"><strong>Content: </strong>This page will mostly include pictures, of different nail sets.</li>
+                    <li class="sublist"><strong>Data Entry/Fields: </strong>None.</li>
+                    <li class="sublist"><strong>Buttons/Hyperlinks: </strong>None.</li>
+                    <li class="sublist"><strong>Actions: </strong>None.</li>
+                    <li class="sublist"><strong>Special Notes: </strong>Might try to do a slideshow diplay. If I can figure it out/do it correctly.</li>
+                </ul>
+                <li>Contact</li>
+                <ul style="margin-top:0%">
+                    <li class="sublist"><strong>Purpose: </strong>To give customers an avenue to get in contact with my client.</li>
+                    <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
+                    <li class="sublist"><strong>Content: </strong>This page will include my client's phone number, email, physical address of her business,
+                        as well as a way customers can make an appointment with her.</li>
+                    <li class="sublist"><strong>Data Entry/Fields: </strong>Data fields that correspond with making an appointment. So like the date, time,
+                        services, customer info, etc.</li>
+                    <li class="sublist"><strong>Buttons/Hyperlinks: </strong>Submit button for data fields to make an appointment.</li>
+                    <li class="sublist"><strong>Actions: </strong>When the user clicks on the button it will process the data, and then there will 
+                        be a confirmation message that pops up. This is so the user is sure their info went through correctly. </li>
+                    <li class="sublist"><strong>Special Notes: </strong>I may make the 'Make an Appointment' section its own page, or something that opens up a new 
+                        page, I am not certain yet.</li>
+                </ul>
+            </ul>
+            <h4>Dynamic Functionality: </h4>
+            <p>
+                On the portfolio page, I will include several images of my client's work. I will put this in a slideshow, 
+                similar to the one seen on Amazon's project pages.
+            </p>
+            <p>
+                On the contact page, if the user wants to make an appointment, they will fill out a form. This form will be 
+                similar in style to this spa's form.
+            </p>
+            <br>
+            <h3 style="font-size: 16px; text-align: center; font-weight: 100;">
+                <a href="https://www.amazon.com/JanSport-Half-Pint-Backpack-Black/dp/B000E3GLWO/ref=lp_360832011_1_1?th=1">Slideshow Example</a> ~
+                <a href="https://www.urbana.health/request-an-appointment">Appointment Example</a>
+            </h3>
+        </main>
+
         
-    </p>
-    <h4>Wireframe: </h4>
-    <figure>
-        <img style="width:600px; padding-top:2%;" src="images/wireframefin.png">
-    </figure>
-    <figcaption>A wireframe showcasing my clients website. The navigation bar will be locked 
-        onto the left of the screen. 
-    </figcaption>
-
-    <h4>Site Map:</h4>
-    <figure>
-        <img style="width:600px; padding-top:2%;" src="images/Sitemap.drawio.png">
-    </figure>
-    <figcaption>A map of my clients site. The middle box is the title of the site, and the default main page (home).</figcaption>
-
-    <h4>Page Design: </h4>
-    <p>Below is a comprehensive list of information for all pages that will be on my clients site:
-    </p>
-    <ul>
-        <li>Homepage</li>
-        <ul style="margin-top:0%">
-            <li class="sublist"><strong>Purpose: </strong>The purpose of this page is to be the main entry for the site.
-                This page will only have information regarding the site itself, and its navigation.</li>
-            <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
-            <li class="sublist"><strong>Content: </strong>The page will include a welcome message, as it is the first thing
-                users will see. It will also include any relevant information regarding the websites navigation.</li>
-            <li class="sublist"><strong>Data Entry/Fields: </strong>This page will not require any data.</li>
-            <li class="sublist"><strong>Buttons/Hyperlinks: </strong>Other than the navigation bar, none.</li>
-            <li class="sublist"><strong>Actions: </strong>None. </li>
-            <li class="sublist"><strong>Special Notes: </strong>None. </li>
-        </ul>
-        <li>About</li>
-        <ul style="margin-top:0%">
-            <li class="sublist"><strong>Purpose: </strong>The purpose about this page is to provide the user with relevant 
-                information about my client and her business. This includes her education, experience, and some other facts 
-                about her, for a personal touch. </li>
-            <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
-            <li class="sublist"><strong>Content: </strong>This page will include the backstory of my client and her business. 
-                So her education, experience, and any facts about her business that are important for the customer to know.</li>
-            <li class="sublist"><strong>Data Entry/Fields: </strong>None.</li>
-            <li class="sublist"><strong>Buttons/Hyperlinks: </strong>None.</li>
-            <li class="sublist"><strong>Actions: </strong>None. </li>
-            <li class="sublist"><strong>Special Notes: </strong>None.</li>
-        </ul>
-        <li>Services Provided</li>
-        <ul style="margin-top:0%">
-            <li class="sublist"><strong>Purpose: </strong>This page will show customers services that my client provides, the main 
-                part of her business.</li>
-            <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
-            <li class="sublist"><strong>Content: </strong>This page will include a comprehensive list of all services provided, including costs and time. This 
-                will also encompass her highlighted skills and techniques, that she is most known for. This page will also include any 
-                relevant information for appointments, such as deposits, late fees, etc.</li>
-            <li class="sublist"><strong>Data Entry/Fields: </strong>None.</li>
-            <li class="sublist"><strong>Buttons/Hyperlinks: </strong>There will be a button to the 'Make an Appointment' page, below the appointment information.</li>
-            <li class="sublist"><strong>Actions: </strong>When the user clicks on the button, they a new page will open in a new tab. No data transfered at this point.</li>
-            <li class="sublist"><strong>Special Notes: </strong>None.</li>
-        </ul>
-        <li>Portfolio</li>
-        <ul style="margin-top:0%">
-            <li class="sublist"><strong>Purpose: </strong>To showcase my clients work.</li>
-            <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
-            <li class="sublist"><strong>Content: </strong>This page will mostly include pictures, of different nail sets.</li>
-            <li class="sublist"><strong>Data Entry/Fields: </strong>None.</li>
-            <li class="sublist"><strong>Buttons/Hyperlinks: </strong>None.</li>
-            <li class="sublist"><strong>Actions: </strong>None.</li>
-            <li class="sublist"><strong>Special Notes: </strong>Might try to do a slideshow diplay. If I can figure it out/do it correctly.</li>
-        </ul>
-        <li>Contact</li>
-        <ul style="margin-top:0%">
-            <li class="sublist"><strong>Purpose: </strong>To give customers an avenue to get in contact with my client.</li>
-            <li class="sublist"><strong>Audience/Users: </strong>Customers will be the users of this page.</li>
-            <li class="sublist"><strong>Content: </strong>This page will include my client's phone number, email, physical address of her business,
-                as well as a way customers can make an appointment with her.</li>
-            <li class="sublist"><strong>Data Entry/Fields: </strong>Data fields that correspond with making an appointment. So like the date, time,
-                services, customer info, etc.</li>
-            <li class="sublist"><strong>Buttons/Hyperlinks: </strong>Submit button for data fields to make an appointment.</li>
-            <li class="sublist"><strong>Actions: </strong>When the user clicks on the button it will process the data, and then there will 
-                be a confirmation message that pops up. This is so the user is sure their info went through correctly. </li>
-            <li class="sublist"><strong>Special Notes: </strong>I may make the 'Make an Appointment' section its own page, or something that opens up a new 
-                page, I am not certain yet.</li>
-        </ul>
-    </ul>
-    <h4>Dynamic Functionality: </h4>
-    <p>
-        On the portfolio page, I will include several images of my client's work. I will put this in a slideshow, 
-        similar to the one seen on Amazon's project pages.
-    </p>
-    <p>
-        On the contact page, if the user wants to make an appointment, they will fill out a form. This form will be 
-        similar in style to this spa's form.
-    </p>
-    <br>
-    <h3 style="font-size: 16px; text-align: center; font-weight: 100;">
-        <a href="https://www.amazon.com/JanSport-Half-Pint-Backpack-Black/dp/B000E3GLWO/ref=lp_360832011_1_1?th=1">Slideshow Example</a> ~
-        <a href="https://www.urbana.health/request-an-appointment">Appointment Example</a>
-    </h3>
-    <!-- -->
-</main>
-
-
-
-<!-- FOOTER NO CHANGE-->
-<br>
-<footer> 
-<hr>
-<nav class="navfoot"> 
-    <a target="_blank" href="https://webpages.charlotte.edu/kwils178/"> Charlotte.edu</a>
-    •
-    <a target="_blank" href="https://github.com/katanna1/katanna1.github.io"> Repository</a>
-    •
-    <a target="_blank" href="https://katanna1.github.io/"> Github.io</a>
-    •
-    <a target="_blank" href="https://www.freecodecamp.org/katrinawilson"> FreeCodeCamp</a>
-    •
-    <a target="_blank" href="https://www.codecademy.com/profiles/katrinawilson"> CodeAcademy</a>
-    •
-    <a target="_blank" href="https://www.linkedin.com/in/katrina-wilson-40642a251/"> LinkedIn</a>
-</nav>
-<p>Copyright © 2023 <a target="_blank" href="wilsonenterprises/index.html" class="footercompany">Wilson Enterprises</a></p>
-<a class="validcheck" target="_blank" href="https://validator.w3.org/check?uri=referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413" alt="Valid HTML!">
-    </a> 
-    <a class="validcheck" target="_blank" href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:42px;height:15px"
-    src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
-    CSS!">
-    </a>
-</footer>
-</body>
+        <!-- FOOTER -->
+        <div id="footer"></div>
+    </body>
 </html>
+
