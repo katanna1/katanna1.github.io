@@ -4,7 +4,7 @@ function validateForm() {
 
 function resetForm() {
     document.getElementById('introForm').reset();
-    document.getElementById('final').style.display = 'none';
+    document.getElementById('result').style.display = 'none';
 }
 
 function addCourse(){
@@ -31,11 +31,11 @@ document.getElementById('introForm').addEventListener('submit', function (e){
     e.preventDefault();
     const data = new data(this);
 
-    const result = document.getElementById('final');
-    result.innerHTML = '<h3>Your Result: </h3>';
+    const resultGroup = document.getElementById('result');
+    resultGroup.innerHTML = '<h3>Your Result: </h3>';
     for (const [key, value] of data.entries()){
-        result.innerHTML += '<p><strong>${key}:</strong> ${value}</p>'
+        resultGroup.innerHTML += '<p><strong>${key}:</strong> ${value}</p>'
     }
-    result.style.display = 'block';
+    resultGroup.style.display = 'block';
 });
 
