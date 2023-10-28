@@ -1,0 +1,67 @@
+<!-- HTML (only change title)-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Calculator Try</title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
+
+
+    <body>
+        <script src="scripts/calculator_try.js"></script>
+        <div id="header"></div>
+        <main>
+            <h2>Calculator Try:</h2>
+            <div class="full">
+
+                <div class="display">
+                </div>
+
+                <div class="calculator_keys">
+                    <div class="digit-wrapper">
+                        <button class="digit" onclick="1">1</button>
+                        <button class="digit" onclick="">2</button>
+                        <button class="digit" onclick="">3</button>
+                        <button class="digit" onclick="">4</button>
+                        <button class="digit" onclick="">5</button>
+                        <button class="digit" onclick="">6</button>
+                        <button class="digit" onclick="">7</button>
+                        <button class="digit" onclick="">8</button>
+                        <button class="digit" onclick="">9</button>
+                    </div>
+
+                    <div class="operation-wrapper">
+                        <button class="operation" data-action="add">+</button>
+                        <button class="operation" data-action="subtract">-</button>
+                        <button class="operation" data-action="multiply">X</button>
+                        <button class="operation" data-action="divide">÷</button>
+                    </div>
+
+                    <div class="other-wrapper">
+                        <button class="all-clear" data-action="clear">AC</button>
+                        <button class="decimal"  data-action="decimal">.</button>
+                        <button class="equal"  data-action="calculate">=</button>
+                    </div>
+                </div>
+            </div> 
+        </main>
+        <div id="footer"></div>
+    </body>
+</html>
+
+
+
+
+
