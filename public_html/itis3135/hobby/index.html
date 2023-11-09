@@ -1,0 +1,292 @@
+<!--Embedded Stylesheet-->
+<style>
+    body {
+        background-color: rgb(222, 212, 238);
+        margin:5% 2%;
+    }
+
+    h1 {
+        font-family: fantasy;
+        font-size: 66px;
+        font-weight: 100;
+        margin-bottom: .5%;
+        text-align: center;
+        letter-spacing: 2px;
+        color:rgb(26, 6, 57);
+    }
+
+    nav {
+        border: solid 4px rgb(69, 43, 112);
+        border-radius: 10%;
+        padding:2%;
+        background-color: rgba(111, 85, 153, 0.586);
+        color:white;
+        font-family: Tahoma;
+        font-size: 22px;
+        text-align: center;
+        margin:0% -1.75%;
+
+    }
+
+    nav a {
+        text-decoration: none;
+        display: inline;
+        color:white;
+        font-family: Tahoma;
+        font-variant: petite-caps;
+        font-size: 26px;
+    }
+
+    nav a:hover{
+        background-color: rgba(222, 212, 238, 0.229);
+        border-radius: 10%;
+        padding:0%;
+    }
+
+    a {
+        text-decoration: none;
+        color:black;
+        background-color: rgba(111, 85, 153, 0.24);
+        padding:.2%;
+        border-radius: 15%;
+    }
+
+    a:hover {
+        background-color: rgba(111, 85, 153, 0.586);
+
+    }
+
+    h2 {
+        font-family: Tahoma;
+        font-variant: petite-caps;
+        font-size: 34px;
+        color: rgb(69, 43, 112);
+        margin-bottom: .5%;
+    }
+
+    h3 {
+        font-family: Tahoma;
+        margin: 1% 2%;
+        font-size: 22px;
+    }
+
+    h4 {
+        margin:1%;
+        font-family: Tahoma;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(69, 43, 112);
+    }
+
+    p {
+        font-family: Tahoma;
+        color:black;
+        font-size: 18px;
+        margin:0% 4%;
+    }
+
+    #home {
+        display:block;
+    }
+
+    table{
+        width:80%;
+        border-collapse:collapse;
+        margin:3% 10%;
+    }
+
+    th {
+        border: 2px solid black;
+        padding:5px;
+        text-align: center;
+        font-family: Tahoma;
+        color:black;
+        font-size: 24px;
+        background-color: rgba(111, 85, 153, 0.586);
+    }
+
+    td {
+        border: 2px solid black;
+        padding:5px;
+        text-align: center;
+        font-family: Tahoma;
+        color:black;
+        font-size: 18px;
+    }
+
+    tr:nth-child(even){
+        background-color: rgb(232, 220, 254);
+
+    }
+
+    tr:nth-child(odd){
+        background-color: rgba(202, 190, 224, 0.849);
+    }
+
+    ul {
+        list-style-type:square;
+        font-family: Tahoma;
+        margin: 1% 2%;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figcaption {
+        font-family: Tahoma;
+        margin: -1% 20%;
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+    }
+
+
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hobby</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Equestrianism</h1>
+            <nav>
+                <a href="#home" class="nav-content"> Home </a>
+                ~<a href="#about" class="nav-content"> About </a>
+                ~<a href="#history" class="nav-content"> History </a>
+                ~<a href="#disciplines" class="nav-content"> Disciplines </a>
+                ~<a href="#competing" class="nav-content"> Competing </a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="section">
+                <h2>Home</h2>
+                <p>dsdf</p>
+            </section>
+
+            <section id="about" class="section">
+                <h2>About</h2>
+                <h3>Important Acronyms:</h3>
+                <ul>
+                    <li><strong> USEF:</strong> United States Equestrian Federation</li>
+                    <li><strong> AQHA:</strong> American Quarter Horse Association</li>
+                    <li><strong> FEI:</strong> Fédération Equestre Internationale</li>
+                </ul>
+            </section>
+
+            <section id="history" class="section">
+                <h2>History</h2>
+                <h3>d</h3>
+                <p>
+                    Horses
+                </p>
+                <h3>Video:</h3>
+                <figure>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_uhIhkuh6zo?si=c7Un8ZeMjJpzK20X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </figure>
+                <figcaption>The video above explains how horses were domesticated, and how that affected early civilizations and benefited overall human history.</figcaption>
+            </section>
+
+            <section id="disciplines" class="section">
+                <h2>Disciplines</h2>
+                <p>Equestrianism has a wide variety of disciplines that 
+                    riders can partake in. The two general groups are <strong>English and Western</strong> riding. Below is a chart that breaks down these 
+                    groups further, and lists more specialized disciplines that fall under each category.
+                </p>
+
+                <table>
+                    <tr>
+                        <th>English</th>
+                        <th>Western</th>
+                    </tr>
+                    <tr>
+                        <td>Dressage</td>
+                        <td>Reining</td>
+                    </tr>
+                    <tr>
+                        <td>Jumping</td>
+                        <td>Barrel Racing</td>
+                    </tr>
+                    <tr>
+                        <td>Cross-Country</td>
+                        <td>Cutting</td>
+                    </tr>
+                    <tr>
+                        <td>Equitation</td>
+                        <td>Roping</td>
+                    </tr>
+                    <tr>
+                        <td>Eventing</td>
+                        <td>Rodeo</td>
+                    </tr>
+                </table>
+                <p>This is <i>not at all</i> a comprensive list of the riding disciplines that exist. These are just 
+                 the more well known and popular types, specifically in our country.
+                </p><br>
+                <h3>Introduction</h3>
+                <p>Despite their popularity, several of these disciplines are not even recognized by the USEF (United States Equestrian Federation). 
+                    Click <a href="https://www.usef.org/compete/breeds-disciplines">here</a> to see the horse breeds and disciplines recognized by USEF,  
+                    including Olympic and Paralympic disciples.
+                </p>
+            </section>
+
+            <section id="competing" class="section">
+                <h2>Competing</h2>
+                <h3>Introduction:</h3>
+                <p>Competitions are not a mandatory aspect of equestrianism, which is why it can be considered as both a <i>hobby and sport</i>. This section 
+                    will expand on horseback riding competitions on an international level, in the <strong>Olympics</strong>. 
+                </p>
+                <figure>
+                    <img width="400px" src="images/pexels-pixabay-236937.jpg" alt="Sculpture of the Olympic rings.">
+                </figure>
+                <figcaption>Sculpture of the Olympic Rings at Portland Heights above Chesil Beach and West Bay, Dorse. Created for the 2012 Olympic Games, hosted in the United Kingdom.</figcaption><br>
+                <h3>Disclaimer:</h3>
+                <p>Due to this specific lens, this section will not include any events of the Western discipline, as the Olympics only have English riding events. 
+                    However, there are just as many popular and high-level Western competitions. If you would like to learn more about competing in Western horseback riding 
+                    events, please click <a href="https://www.aqha.com/disciplines/showing/start-showing/showing-classes/western">here</a>. In the United States, the AQHA (American 
+                    Quarter Horse Association) organizes many well known Western competitions.
+                </p><br>
+
+                <h3>Olympic Events:</h3>
+                    <h4>Dressage</h4>
+                        <p>
+                            The dressage event, popularly nicknamed <i>equestrian ballet</i>, is the most advanced form of horse training. In this event, the horse and rider duo preform 
+                            intricate and artistic movements to the rhythm of their chosen music. This event is composed of both individual and team competitions, each with its own set of medals.
+                        </p><br>
+                        <p>Olympic dressage judges take into account the elegance, ease, and fludity of the movements. Throughout the event, the horse must show the three paces, which are: walk, trot, and canter.
+                            Some movements are predetermined in the competition, meaning every athlete must somehow incorporate these into their performance. 
+                        </p><br>
+                        <p>An important aspect of this sport, especially in this event, is teamwork between the horse and rider. The manuevers required at this level are very technical, and require 
+                            immense amounts of training. But, a primary goal of dressage is to make the perfomance look easy and natural, like the rider is simply sitting on top of a horse who decided to 
+                            do ballet moves.
+                        </p><br>
+                        <p>
+                            Learn more about Olympic Dressage by clicking <a href="https://olympics.com/en/news/pathway-to-paris-2024-equestrian-dressage-qualification-system-explained">here</a>.
+                        </p>
+
+                        
+                        
+                    <h4>Show Jumping</h4>
+                        <p>
+                            hh
+                        </p>
+
+                    <h4>Eventing</h4>
+                        <p>
+                            jjdfs
+                        </p>
+
+            </section>
+
+        </main>
+    </body>
+
+</html>
