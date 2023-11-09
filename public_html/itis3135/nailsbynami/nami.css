@@ -1,0 +1,90 @@
+* {
+    background-color: #272727;
+    margin-top: 1%;
+}
+
+.logo {
+    width: 220px;
+    position: absolute; 
+    left: -15px;
+    top:-60px;
+}
+
+header {
+    position: absolute;
+    top: -25px;
+    left: 210px;
+}
+
+.leaf-divide{
+    position: absolute;
+    width:165px;
+    top: 85px;
+    left:15px;
+    height: 60px;
+}
+
+h1 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 12px;
+    color:#ECE6DB;
+    font-size: 100px;
+    font-weight: 100;
+    font-variant: all-small-caps;
+}
+
+h2 {    
+    background-color: transparent;
+}
+
+p{   
+    background-color: transparent;
+
+}
+
+main {
+    background-color: transparent;
+    
+}
+
+.rest {
+    position: relative;
+    top:145px;
+    left:210px;
+    max-width:80%;
+    background-color: rgba(168, 181, 192, 0.452);
+}
+
+.main-nav {
+    position:absolute;
+    top: 145px;
+    left:15px;
+    width:160px;
+    height:350px;
+    background-color: rgba(255, 255, 255, 0.414);
+    border: solid 3px black;
+}
+
+.main-nav a {
+    display:block;
+    text-decoration: none;
+    color:rgb(89, 58, 93);
+    font-size: 26px;
+    background-color: transparent;
+    padding: 4% 2%;
+    font-weight:600;
+    border-bottom: 2px solid black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-nav a:hover{
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+footer {
+    position:relative;
+    top: 545px;
+    left:15px;
+}
+
+
