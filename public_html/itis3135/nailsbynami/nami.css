@@ -3,6 +3,10 @@
     margin-top: 1%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .logo {
     width: 220px;
     position: absolute; 
@@ -11,17 +15,16 @@
 }
 
 header {
-    position: absolute;
-    top: -25px;
-    left: 210px;
+   
 }
 
 .leaf-divide{
     position: absolute;
-    width:165px;
+    width:200px;
     top: 85px;
-    left:15px;
-    height: 60px;
+    left:0px;
+    height: 55px;
+    z-index: 2;
 }
 
 h1 {
@@ -31,15 +34,32 @@ h1 {
     font-size: 100px;
     font-weight: 100;
     font-variant: all-small-caps;
+    position: absolute;
+    top: -18px;
+    left: 200px;
+    z-index: 1;
 }
 
 h2 {    
+    position: absolute;
+    top:110px;
+    left: 198px;
+    z-index:5;
+    font-size: 40px;
+    font-family: "Arial Narrow", sans-serif;
     background-color: transparent;
 }
 
 p{   
     background-color: transparent;
-
+    color:#212529;
+    position: absolute;
+    top:158px;
+    left: 200px;
+    z-index:5;
+    margin-right: 1%;
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 22px;
 }
 
 main {
@@ -48,43 +68,101 @@ main {
 }
 
 .rest {
-    position: relative;
-    top:145px;
-    left:210px;
-    max-width:80%;
-    background-color: rgba(168, 181, 192, 0.452);
+    position: absolute;
+    height:500px;
+    width:110%;
+    margin:0% -5%;
+    top:102px;
+    background-color:#9ca7b2;
+    z-index: 1;
+    border-top: solid 15px black !important;
 }
 
 .main-nav {
     position:absolute;
-    top: 145px;
-    left:15px;
-    width:160px;
-    height:350px;
-    background-color: rgba(255, 255, 255, 0.414);
-    border: solid 3px black;
+    top: 105px;
+    left: 0px;
+    width:178px;
+    height:332px;
+    background-color: #DEE2E6;
+    border-right: solid 10px black ;
+    border-bottom: solid 4px black ;
+    border-bottom-right-radius: 5%;
+    z-index: 2;
+    line-height: 32px;
+
 }
 
 .main-nav a {
     display:block;
     text-decoration: none;
-    color:rgb(89, 58, 93);
+    color:#212529;
     font-size: 26px;
     background-color: transparent;
     padding: 4% 2%;
     font-weight:600;
-    border-bottom: 2px solid black;
+    border-bottom: 2.5px solid black;
     font-family: 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.5px;
 }
 
+#home-nav {
+    border-top-width: 15px;
+}
+
+
 .main-nav a:hover{
-    background-color: rgba(0, 0, 0, 0.14);
+    background-color: rgba(0, 0, 0, 0.158);
 }
 
 footer {
-    position:relative;
-    top: 545px;
-    left:15px;
+    position:absolute;
+    bottom: 15px;
+    left:25%;
+    z-index: 6;
 }
+
+.img-container {
+}
+
+.img1 {
+    position:absolute;
+    z-index:2;
+    top:210px;
+    left:200px;
+    border: solid 2px #212529;
+}
+
+.img2 {
+    position:absolute;
+    z-index:2;
+    left:470px;
+    top:210px;
+    border: solid 2px #212529;
+}
+
+.img3 {
+    position:absolute;
+    z-index:2;
+    left:740px;
+    top:210px;
+    border: solid 2px #212529;
+}
+.img4 {
+    position:absolute;
+    z-index:2;
+    left:200px;
+    top:560px;
+    border: solid 2px #212529;
+}
+
+.body-port{
+    height:1200px;
+}
+
+p a {
+    background-color: transparent;
+}
+
 
 
