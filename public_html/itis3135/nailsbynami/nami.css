@@ -1,102 +1,124 @@
+:root {
+    --darkback: #272727; 
+    --lightback: #9ca7b2;
+    --logotext: #ECE6DB;
+    --lightblue: rgb(132, 151, 198);
+    --darkblue: rgb(13, 30, 75);
+}
+
 * {
-    background-color: #272727;
+    background-color: var(--darkback);
     margin-top: 1%;
+    margin-bottom: -1%;
+
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 .logo {
     width: 220px;
     position: absolute; 
-    left: -15px;
-    top:-60px;
+    left: -55px;
+    top:-65px;
+    padding-left: 4%;
 }
 
-header {
-   
-}
 
-.leaf-divide{
-    position: absolute;
-    width:200px;
-    top: 85px;
-    left:0px;
-    height: 55px;
-    z-index: 2;
-}
 
 h1 {
     font-family: 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 12px;
-    color:#ECE6DB;
-    font-size: 100px;
+    color:var(--logotext);
+    font-size: 66px;
     font-weight: 100;
+    float:top;
+    margin-left:210px;
+    margin-top: -1%;
     font-variant: all-small-caps;
-    position: absolute;
-    top: -18px;
-    left: 200px;
     z-index: 1;
 }
 
 h2 {    
-    position: absolute;
-    top:110px;
-    left: 198px;
+    position: relative;
+    left: 210px;
+    padding-bottom: -2%;
     z-index:5;
-    font-size: 40px;
+    font-size: 46px;
     font-family: "Arial Narrow", sans-serif;
     background-color: transparent;
 }
 
-p{   
-    background-color: transparent;
-    color:#212529;
-    position: absolute;
-    top:158px;
-    left: 200px;
+h3 {
+    position: relative;
+    color: var(--darkblue);
+    padding:1% 0%;
+    left: 210px;
     z-index:5;
-    margin-right: 1%;
+    font-size: 26px;
+    font-family: "Arial Narrow", sans-serif;
+    background-color: transparent;
+}
+
+p {   
+    background-color: transparent;
+    color:var(--darkback);
+    position: relative;
+    left: 220px;
+    z-index:5;
+    margin-right: 20%;
     font-family: "Arial Narrow", sans-serif;
     font-size: 22px;
 }
 
-main {
+main img {
+    padding:2%;
     background-color: transparent;
-    
+    z-index:6;
+    margin-left:210px;
+    display:block;
+
 }
 
-.rest {
-    position: absolute;
-    height:500px;
-    width:110%;
-    margin:0% -5%;
-    top:102px;
-    background-color:#9ca7b2;
+em, strong {
+    background-color: transparent;
+
+}
+
+
+main {
+    position: relative;
+    background-color:var(--lightback);
+    width:102vw;
+    margin:-3% -1%;
+    top:-290px;
     z-index: 1;
-    border-top: solid 15px black !important;
+    border-top: solid 15px black ;
+    margin-bottom: -20%;
 }
 
 .main-nav {
-    position:absolute;
-    top: 105px;
-    left: 0px;
-    width:178px;
-    height:332px;
-    background-color: #DEE2E6;
-    border-right: solid 10px black ;
-    border-bottom: solid 4px black ;
-    border-bottom-right-radius: 5%;
+    position:sticky;
+    top: 125px;
+    width:190px;
+    height:340px;
+    background-color: #272727c1;
+    border-right: solid 8px black;
+    border-left: solid 8px black;
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
+    border-radius: 5%;
     z-index: 2;
-    line-height: 32px;
+    line-height: 33px;
+    margin-left: -.9%;
 
 }
 
 .main-nav a {
     display:block;
     text-decoration: none;
-    color:#212529;
+    color: var(--logotext);
     font-size: 26px;
     background-color: transparent;
     padding: 4% 2%;
@@ -112,56 +134,27 @@ main {
 
 
 .main-nav a:hover{
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color:  rgba(255, 255, 255, 0.08);
+    color: var(--lightblue);
 }
 
 footer {
-    position:absolute;
-    bottom: 15px;
-    left:25%;
     z-index: 6;
+    float:bottom;
+    width:102vw;
+    height:80px;
+    padding:1%;
+    text-align: center;
+
+    background-color: var(--darkblue);
 }
 
-.img-container {
-}
 
-.img1 {
-    position:absolute;
-    z-index:2;
-    top:210px;
-    left:200px;
-    border: solid 2px #212529;
-}
-
-.img2 {
-    position:absolute;
-    z-index:2;
-    left:470px;
-    top:210px;
-    border: solid 2px #212529;
-}
-
-.img3 {
-    position:absolute;
-    z-index:2;
-    left:740px;
-    top:210px;
-    border: solid 2px #212529;
-}
-.img4 {
-    position:absolute;
-    z-index:2;
-    left:200px;
-    top:560px;
-    border: solid 2px #212529;
-}
-
-.body-port{
-    height:1200px;
-}
-
-p a {
+.createdby {
+    position:sticky;
     background-color: transparent;
+    color: var(--logotext);
+    z-index: 6;
 }
 
 
