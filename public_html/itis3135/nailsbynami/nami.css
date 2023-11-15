@@ -1,9 +1,10 @@
 :root {
     --darkback: #272727; 
-    --lightback: #9ca7b2;
+    --lightback: rgb(175, 196, 219);
     --logotext: #ECE6DB;
-    --lightblue: rgb(132, 151, 198);
-    --darkblue: rgb(13, 30, 75);
+    --lightblue: rgb(158, 179, 229);
+    --darkblue: rgb(13, 23, 53);
+    --transwhite: rgba(247, 247, 255, 0.325);
 }
 
 * {
@@ -47,6 +48,9 @@ nav{
     background-color: var(--lightback);
 
 }
+
+
+
 
 
 
@@ -105,7 +109,7 @@ h3 {
 p {   
     color:var(--darkback);
     font-family: "Arial Narrow", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 main img {
@@ -113,6 +117,76 @@ main img {
     display:inline-block;
 }
 
+.contact-info {
+    font-family: "Arial Narrow", sans-serif;
+    list-style-type: square;
+    font-size: 20px;
+    border: solid 4px var(--darkblue);
+    background-color: var(--transwhite);
+    border-radius:5%;
+    width:fit-content;
+}
+
+ul li {
+    padding:.5%;
+}
+
+.contact-form {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 18px;
+    margin-left:5%;
+}
+
+::placeholder {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 18px;
+}
+
+.submit-button {
+    background-color: var(--lightblue);
+    border: solid 2px var(--darkblue);
+    width:100px;
+    height:40px;
+    color: var(--darkblue);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Arial Narrow", sans-serif;
+}
+
+.submit-button:hover{
+    background-color: var(--transwhite);
+    cursor: pointer;
+}
+
+
+table {
+    width:300px;
+    font-family: "Arial Narrow", sans-serif;
+    border-collapse:collapse;
+    border: solid 3px black;
+    font-size: 22px;
+}
+
+table th {
+    background-color: var(--lightblue);
+    text-align:left
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--transwhite);
+}
+
+td {
+    padding:1%
+}
+
+.colorwheelpic{
+    float:right;
+    border:solid 12px var(--darkblue);
+    margin-right:10%;
+    border-radius:5%;
+}
+  
 
 
 main {
