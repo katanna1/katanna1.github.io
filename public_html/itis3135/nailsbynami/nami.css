@@ -1,10 +1,13 @@
 :root {
-    --darkback: #272727; 
-    --lightback: rgb(175, 196, 219);
-    --logotext: #ECE6DB;
-    --lightblue: rgb(158, 179, 229);
-    --darkblue: rgb(13, 23, 53);
-    --transwhite: rgba(247, 247, 255, 0.325);
+    --plum: #270a1e; 
+    --palepink: #ffebf6;
+    --logotext: #ffffff;
+    --contenttext: #000000;
+    --dustyrose: #955080;
+    --paledustyrose: #95508065;
+    --palerose: #dc59b540;
+    --darkgray: #272727;
+    --transwhite: #f7f7ffa4;
 }
 
 * {
@@ -23,7 +26,7 @@ body {
       "nav footer footer"; 
    
 
-    background-color: var(--lightback);
+    background-color: var(--palepink);
 }
 
 body main div.content{
@@ -38,14 +41,14 @@ header {
     flex-flow: column;
     justify-content:flex-end;
     width: 100%;
-    background-color: var(--darkback);
+    background-color: var(--plum);
 
 }
 
 nav{
     grid-area:nav;
     padding-left: 1%;
-    background-color: var(--lightback);
+    background-color: var(--palepink);
 
 }
 
@@ -63,7 +66,7 @@ footer {
     grid-area:footer;
     padding:1%;
     color: var(--logotext);
-    background-color: var(--darkblue);
+    background-color: var(--darkgray);
 }
 
 footer p {
@@ -86,7 +89,7 @@ footer p {
 
 h1 {
     font-family: 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 12px;
+    letter-spacing: 14px;
     color:var(--logotext);
     font-size: 66px;
     font-weight: 100;
@@ -96,20 +99,40 @@ h1 {
 }
 
 h2 {    
-    font-size: 46px;
-    font-family: "Arial Narrow", sans-serif;
+    font-size: 48px;
+    margin-left:-5px;
+    color:var(--plum);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+
 }
 
 h3 {
-    color: var(--darkblue);
+    color: var(--dustyrose);
     font-size: 26px;
-    font-family: "Arial Narrow", sans-serif;
+    font-family: "Arial Narrow Bold", sans-serif;
+    padding-bottom:.5%;
 }
 
+
 p {   
-    color:var(--darkback);
     font-family: "Arial Narrow", sans-serif;
     font-size: 20px;
+    margin-left:5px;
+    color:var(--contenttext);
+}
+
+p a {
+    background-color: var(--paledustyrose);
+    padding:.25%;
+    border-radius: 10%;
+    text-decoration: none;
+    color:var(--contenttext);
+}
+
+p a:hover {
+    background-color: var(--palerose);
+
 }
 
 main img {
@@ -117,14 +140,35 @@ main img {
     display:inline-block;
 }
 
+.hometime{
+    font-size: 18px;
+    font-family: "Arial Narrow", sans-serif;
+    padding:1.2%;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: solid 3px var(--contenttext);
+    border-radius: 10%;
+    width:fit-content;
+    float:right;
+    background-color: var(--darkgray);
+    color: var(--logotext);
+}
+
 .contact-info {
     font-family: "Arial Narrow", sans-serif;
     list-style-type: square;
     font-size: 20px;
-    border: solid 4px var(--darkblue);
+    border: solid 4px var(--darkgray);
     background-color: var(--transwhite);
     border-radius:5%;
     width:fit-content;
+}
+
+.home-info {
+    font-family: "Arial Narrow", sans-serif;
+    list-style-type:square;
+    font-size: 20px;
+    margin-left:15px;
 }
 
 ul li {
@@ -143,11 +187,11 @@ ul li {
 }
 
 .submit-button {
-    background-color: var(--lightblue);
-    border: solid 2px var(--darkblue);
+    background-color: var(--dustyrose);
+    border: solid 2px var(--darkgray);
     width:100px;
     height:40px;
-    color: var(--darkblue);
+    color: var(--darkgray);
     font-size: 24px;
     font-weight: 600;
     font-family: "Arial Narrow", sans-serif;
@@ -163,12 +207,12 @@ table {
     width:300px;
     font-family: "Arial Narrow", sans-serif;
     border-collapse:collapse;
-    border: solid 3px black;
+    border: solid 3px var(--contenttext);
     font-size: 22px;
 }
 
 table th {
-    background-color: var(--lightblue);
+    background-color: var(--dustyrose);
     text-align:left
 }
 
@@ -182,7 +226,7 @@ td {
 
 .colorwheelpic{
     float:right;
-    border:solid 12px var(--darkblue);
+    border:solid 12px var(--darkgray);
     margin-right:10%;
     border-radius:5%;
 }
@@ -191,9 +235,9 @@ td {
 
 main {
     grid-area:content;
-    background-color:var(--lightback);
+    background-color:var(--palepink);
     width:96%;
-    border-top: solid 15px black ;
+    border-top: solid 15px var(--contenttext) ;
     z-index: 1;
     padding-left: 4%;
 }
@@ -201,10 +245,10 @@ main {
 .main-nav {
     z-index: 2;
     grid-area:nav;
-    background-color: #4d4d4d;
-    border-right: solid 8px black;
-    border-top: solid 4px black;
-    border-bottom: solid 4px black;
+    background-color: var(--darkgray);
+    border-right: solid 8px var(--contenttext);
+    border-top: solid 4px var(--contenttext);
+    border-bottom: solid 4px var(--contenttext);
     border-bottom-right-radius: 5%;
     line-height: 40px;
     max-height:fit-content;
@@ -213,13 +257,14 @@ main {
 
 .main-nav a {
     display:block;
+    font-variant: small-caps;
     text-decoration: none;
     color: var(--logotext);
-    font-size: 26px;
+    font-size: 36px;
     background-color: transparent;
     padding: 4% 2%;
     font-weight:600;
-    border-bottom: 2.5px solid black;
+    border-bottom: 2.5px solid var(--contenttext);
     font-family: 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1.5px;
 }
@@ -228,7 +273,7 @@ main {
 
 .main-nav a:hover{
     background-color:  rgba(255, 255, 255, 0.08);
-    color: var(--lightblue);
+    color: var(--dustyrose);
 }
 
 
