@@ -475,8 +475,23 @@ ul li {
   padding: .5%;
 }
 
+ol {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+ol li {
+  padding: .5%;
+}
+
 .sublist {
   list-style:circle;
+}
+
+.sub-ol {
+  list-style: lower-alpha;
+  margin-bottom: 0%;
+  margin-top: .5%;
 }
 
 
