@@ -4,13 +4,43 @@ Styling for ITIS-3135 Site <3
 
 *****************************/
 
+/*Color Variables*/
+:root {
+  /*Lighter*/
+  --mainpink: #ffbedc;
+  --brightrose: #bc2359;
+  --dullpastelpink: #cb7ba097;
+  --pastelpink: #e49dbe;
+  --babypink: #ffe1ec5f;
+  --pink: #9c264f33;
+  --milpink: #bd7597;
+  
+  /*Vibrant*/
+  --rose: #bc2064;
+  --darkerrose: #931f52;
+  --rosehover: #9a2155;
+  --raspberry: #9c264f;
+  --dustyrose: #b5486e;
+  --magenta: #6e0e49;
+  
+  /*Purples*/
+  --darkpurple: #44072d;
+  --plum: #7e1f40;
+  --dustyplum: rgb(189, 117, 151);
+
+  /*Greys*/
+  --lightgrey: #e1d6da;
+  --grey: #979797;
+  --darkergrey: #787676;
+}
+
 /*General and Main Nav. Bar Formatting*/
 body {
-  background-color: rgb(255, 190, 220);
+  background-color: var(--mainpink);
 }
 
 .nav {
-  color:  rgb(188, 35, 89);
+  color:  var(--brightrose);
   font-size: 14px;
   border: 2.8px solid black;
   border-radius: 25%;
@@ -25,7 +55,7 @@ body {
   padding-left: .75%;
   padding-right: .75%;
   letter-spacing: 2px;
-  background-color:  rgba(255, 225, 236, 0.373);
+  background-color:  var(--babypink)
 }
 
 
@@ -59,7 +89,7 @@ body {
   text-align: right !important;
   text-wrap: nowrap;
   transform: translate(-50%, 0) !important;
-  background-color: rgb(189, 117, 151);
+  background-color: var(--milpink);
   width:15%;
   z-index: 1;
   margin-top: .85px;
@@ -83,21 +113,21 @@ a {
 }
 
 a:visited {
-  color: rgb(68, 7, 45);
+  color: var(--darkpurple);
 }
 
 a:hover {
-  background-color: rgba(203, 123, 160, 0.592);
+  background-color: var(--dullpastelpink);
 }
 
 a:active {
-  color: rgb(68, 7, 45);
+  color: var(--darkpurple);
 }
 
 h3 a { /*h3 links*/
   color: rgb(0, 0, 0);
   text-decoration: none;
-  background-color:  rgba(255, 225, 236, 0.373);
+  background-color:  var(--babypink);
   padding:2px;
 }
 
@@ -109,14 +139,14 @@ h3 a { /*h3 links*/
 }
 
 .subnav-content a:hover { /* hovering over each subbox */
-  background-color: rgba(255, 225, 236, 0.373);
+  background-color: var(--babypink);
   border-radius: 0%;
   width: 92%;
   display: block;
 }
 
 .subnav:hover .subnav-button { /* hovering over the button */
-  background-color: rgb(156, 38, 79);
+  background-color: var(--raspberry);
   display: block;
   border-radius: 12%;
 }
@@ -151,7 +181,7 @@ h1 {
 }
 
 header p { /*'subtext' under h1*/
-  color: rgb(68, 7, 45);
+  color: var(--darkpurple);
   font-family: Stencil Std, fantasy;
   letter-spacing: 2px;
   font-size: 22px;
@@ -161,7 +191,7 @@ header p { /*'subtext' under h1*/
 }
 
 h2 {
-  color: rgb(156, 38, 79);
+  color: var(--raspberry);
   font-size: 38px;
   margin-top: 18px;
   font-family:  Stencil Std, fantasy;
@@ -200,7 +230,7 @@ h3 {
 h4 {
   font-family: Didot;
   font-size: 18px;
-  color: rgb(110, 14, 73);
+  color: var(--magenta);
   margin-right: 1.5%;
   margin-left: 1.5%;
   margin-top: 1%;
@@ -249,7 +279,7 @@ main p {
 /*Footer Formatting*/
 footer {
   text-align: center;
-  background-color: rgba(255, 225, 236, 0.373);
+  background-color: var(--babypink);
   margin-right: -.75%;
   margin-left: -.75%;
   margin-bottom: -5%;
@@ -271,7 +301,7 @@ footer img {
 }
 
 .navfoot { /*link seperators*/
-  color: rgb(156, 38, 79);
+  color: var(--raspberry);
   text-align: center;
   letter-spacing: 1.7px;
   font-family: Didot;
@@ -285,7 +315,7 @@ table {
 }
 
 th { /*table headers*/
-  background-color: rgb(181, 72, 110);
+  background-color: var(--dustyrose);
   color: rgb(0, 0, 0);
   font-family: Didot;
   font-size: 18px;
@@ -301,11 +331,11 @@ th, td { /*table headers and data boxes*/
 
 .category { /*makes category column all one color*/
   font-weight: bold;
-  background-color:rgb(228, 157, 190);
+  background-color:var(--pastelpink);
 }
 
 tr:nth-child(odd) { /*alternating row colors*/
-  background-color: rgba(255, 225, 236, 0.373);
+  background-color: var(--babypink);
 }
 
 
@@ -315,7 +345,7 @@ form {
   font-size: 16px;
   margin-right: 2%;
   margin-left: 2%;
-  background-color: rgba(156, 38, 79, 0.199);
+  background-color: var(--pink);
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 1px;
@@ -375,8 +405,8 @@ textarea {
 
 /*Button Formatting*/
 .submit-button {
-  background-color: rgb(188, 35, 89);
-  border-color: rgb(121, 19, 55);
+  background-color: var(--rose);
+  border-color: var(--darkerrose);
   height: 30px; 
   width: 80px;
   font-size: 18px;
@@ -386,13 +416,13 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color:  rgb(126, 31, 64); 
+  background-color:  var(--rosehover); 
   cursor: pointer;
 }
 
 .reset-button {
-  background-color: rgb(225, 214, 218);
-  border-color: #979797;
+  background-color: var(--lightgrey);
+  border-color: var(--grey);
   height: 30px; 
   width: 80px;
   font-size: 18px;
@@ -402,13 +432,13 @@ textarea {
 }
 
 .reset-button:hover {
-  background-color: #787676; 
+  background-color: var(--darkergrey); 
   cursor: pointer;
 }
 
 .crs-add-button {
-  background-color: rgb(188, 32, 100);
-  border-color:  rgb(147, 31, 82);
+  background-color: var(--rose);
+  border-color:  var(--darkerrose);
   height: 24px; 
   width: 100px;
   font-size: 16px;
@@ -418,13 +448,13 @@ textarea {
 }
 
 .crs-add-button:hover {
-  background-color:  rgb(154, 33, 85); 
+  background-color:  var(--rosehover); 
   cursor: pointer;
 }
 
 .CRSdelete {
-  background-color: rgb(225, 214, 218);
-  border-color: #979797;
+  background-color: var(-lightgrey);
+  border-color: var(--grey);
   height: 22px; 
   width: 80px;
   font-size: 14px;
@@ -434,41 +464,39 @@ textarea {
 }
 
 .CRSdelete:hover {
-  background-color: #787676; 
+  background-color: var(--darkergrey); 
   cursor: pointer;
 }
 
 .salary-button {
-  background-color: rgb(188, 32, 100);
-  border-color:  rgb(147, 31, 82);
+  background-color: var(--rose);
+  border-color:  var(--darkerrose);
   height: 30px; 
   width: 100px;
   font-size: 14px;
   font-weight: 900;
-  padding:1%;
-  font-family:  didot;
+  font-family:  Didot;
   text-align: center;
 }
 
 .salary-button:hover {
-  background-color:  rgb(154, 33, 85); 
+  background-color:  var(--rosehover); 
   cursor: pointer;
 }
 
 .disp-button {
-  background-color: rgb(225, 214, 218);
-  border-color: #979797;
+  background-color: var(--lightgrey);
+  border-color: var(--grey);
   height: 30px; 
   width: 150px;
   font-size: 14px;
   font-weight: 900;
-  padding:1%;
   font-family:  didot;
   text-align: center;
 }
 
 .disp-button:hover {
-  background-color: #787676; 
+  background-color: var(--darkergrey); 
   cursor: pointer;
 }
 
@@ -476,7 +504,7 @@ textarea {
 /*<hr> Formatting*/
 .formbreak { /*dark-red page divider*/
   border-style: solid;
-  border-color: rgb(156, 38, 79);
+  border-color: var(--raspberry);
   border-width: 1.2px;
   margin-right: -5%;
   margin-left: -5%;
@@ -484,14 +512,14 @@ textarea {
 
 .smallbreak {
   border-style: solid;
-  border-color: rgb(156, 38, 79);
+  border-color: var(--raspberry);
   border-width: 1.75px;
   margin-right: 35%;
   margin-left: 35%;
 }
 
 footer hr {
-  border-color: rgb(68, 7, 45);
+  border-color: var(--darkpurple);
   border-width: 1px;
   margin-right: 0%;
   margin-left: 0%;
@@ -542,7 +570,7 @@ ol li {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-  background: rgb(110, 14, 73);
+  background: var(--magenta);
 }
 
   /* Handle on hover */
