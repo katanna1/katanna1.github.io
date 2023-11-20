@@ -1,0 +1,78 @@
+<!-- **********
+Template for the rest of the ITIS-3135 pages. 
+(site with a pink color scheme)
+********** -->
+
+
+<!-- DOCTYPE and HEAD (only change title)-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Arrays </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
+
+    
+    <body>
+        <!-- HEADER -->
+        <div id="header"></div>
+
+        <!-- MAIN -->
+        <main>
+            <h2>Arrays</h2>
+            <h3>Employee Data Calculations</h3>
+            <h4>Instructions:</h4>
+            <p>Enter the name and corresponding salary of an employee. Then click <strong>'Add Salary'</strong> to submit that data. 
+                You can input as many or as few employee-salary pairs as you would like.</p>
+            <p>To see the full list of data pairs you have entered, see the dropdown box under the <em>'Entered Employees'</em> subsection.</p>
+            <p>Once you are finished entering all employee and salary data, see the <em>'Final Calculations'</em> subsection. When you click the <strong>'Display Results'</strong> button, the form will calculate and print 
+                the average and highest salaries, from the data you input. Clicking the <strong>'Display Salary'</strong> button will create a table of the data you input, 
+                with the corresponding employee's name and salary pair. 
+            </p>
+            <h4>Data Input:</h4><br>
+            <input type="text" id="person-input" placeholder="Enter Name">
+            <input type="number" id="salary-input" placeholder="Enter Salary">
+            <button class="salary-button" onclick="addSalary()">Add Salary</button>
+
+            <br><h4>Entered Employees:</h4>
+            <br><select id="select-person">
+                <option value="Person 1">Person 1</option>
+            </select><br>
+
+            <h4>Final Calculations:</h4><br>
+            <button class="disp-button" onclick="displayResults()">Display Results</button>
+            <button class="disp-button" onclick="displaySalary()">Display Salary</button>
+
+            <br><div id="results"></div>
+
+            <br><table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+
+            <script src="scripts/arrays.js"></script>
+        </main>
+
+
+
+        <!-- FOOTER -->
+        <div id="footer"></div>
+    </body>
+</html>

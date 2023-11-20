@@ -373,7 +373,7 @@ textarea {
 
 
 
-/*Form's Button Formatting*/
+/*Button Formatting*/
 .submit-button {
   background-color: rgb(188, 35, 89);
   border-color: rgb(121, 19, 55);
@@ -434,6 +434,40 @@ textarea {
 }
 
 .CRSdelete:hover {
+  background-color: #787676; 
+  cursor: pointer;
+}
+
+.salary-button {
+  background-color: rgb(188, 32, 100);
+  border-color:  rgb(147, 31, 82);
+  height: 30px; 
+  width: 100px;
+  font-size: 14px;
+  font-weight: 900;
+  padding:1%;
+  font-family:  didot;
+  text-align: center;
+}
+
+.salary-button:hover {
+  background-color:  rgb(154, 33, 85); 
+  cursor: pointer;
+}
+
+.disp-button {
+  background-color: rgb(225, 214, 218);
+  border-color: #979797;
+  height: 30px; 
+  width: 150px;
+  font-size: 14px;
+  font-weight: 900;
+  padding:1%;
+  font-family:  didot;
+  text-align: center;
+}
+
+.disp-button:hover {
   background-color: #787676; 
   cursor: pointer;
 }
