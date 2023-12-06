@@ -1,0 +1,87 @@
+<!-- **********
+Template for the rest of the ITIS-3135 pages. 
+(site with a pink color scheme)
+********** -->
+
+
+<!-- DOCTYPE and HEAD (only change title)-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 3135 Slideshow </title>
+        <link rel="stylesheet" href ="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(function(){
+                $('#header').load('components/header.html');
+                $('#footer').load('components/footer.html');
+            });
+        </script>
+    </head>
+
+    
+    <body>
+        <!-- HEADER -->
+        <div id="header"></div>
+
+        <!-- MAIN -->
+        <main>
+            <h2>Slideshow</h2>
+            <button class="slideshow-btn left">LEFT<i class="fa-solid fa-angles-left"></i></button>
+					<button class="slideshow-btn right">RIGHT<i class="fa-solid fa-angles-right"></i></button>
+            <section class="slides">
+				<div class ="slideshow-container">
+                    
+					<ul class="slideshow">
+						<li class="slideshow-item active"><img style="width:500px" src="images/slideshow/kangaroo.jpg" alt="Kangaroo"></li>
+						<li class="slideshow-item"><img style="width:600px;" src="images/slideshow/armadillo.jpg" alt="Armadillo"></li>
+                        <li class="slideshow-item"><img style="width:550px" src="images/slideshow/tarantula.jpg" alt="Tarantuala"></li>
+                        <li class="slideshow-item"><img style="width:600px" src="images/slideshow/rabbit.jpg" alt="Rabbit"></li>
+                        <li class="slideshow-item"><img style="width:650px" src="images/slideshow/iguana.jpg" alt="Iguana"></li>
+                        <li class="slideshow-item"><img style="width:750px" src="images/slideshow/narwhal.jpg" alt="Narwhal"></li>
+                        <li class="slideshow-item"><img style="width:600px" src="images/slideshow/aardvark.jpg" alt="Aardvark"></li>
+
+                        <li class="slideshow-item"><img style="width:500px" src="images/slideshow/wasp.jpg" alt="Wasp"></li>
+                        <li class="slideshow-item"><img style="width:550px" src="images/slideshow/ibex.jpg" alt="Ibex"></li>
+                        <li class="slideshow-item"><img style="width:600px" src="images/slideshow/lion.jpg" alt="Lion"></li>
+                        <li class="slideshow-item"><img style="width:500px" src="images/slideshow/sheep.jpg" alt="Sheep"></li>
+                        <li class="slideshow-item"><img style="width:700px" src="images/slideshow/ostrich.jpg" alt="Ostrich"></li>
+                        <li class="slideshow-item"><img style="width:700px" src="images/slideshow/newt.jpg" alt="Newt"></li>
+					</ul>
+
+					
+
+					<div class="slideshow-nav">
+						<div class="nav-item active">K: Kangaroo</div>
+						<div class="nav-item">A: Armadillo</div>
+						<div class="nav-item">T: Tarantuala</div>
+						<div class="nav-item">R: Rabbit</div>
+						<div class="nav-item">I: Iguana</div>
+                        <div class="nav-item">N: Narwhal</div>
+						<div class="nav-item">A: Aardvark</div>
+
+					</div> <br><br>
+                    <div class="slideshow-nav">
+                        <div class="nav-item">W: Wasp</div>
+						<div class="nav-item">I: Ibex</div>
+						<div class="nav-item">L: Lion</div>
+						<div class="nav-item">S: Sheep</div>
+						<div class="nav-item">O: Ostrich</div>
+						<div class="nav-item">N: Newt</div>
+					</div>
+				</div>
+			</section>
+            <script src="scripts/slideshow.js"></script>
+        </main>
+
+
+
+        <!-- FOOTER -->
+        <div id="footer"></div>
+    </body>
+</html>

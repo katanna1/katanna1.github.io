@@ -34,6 +34,7 @@ Styling for ITIS-3135 Site <3
   --darkergrey: #787676;
 }
 
+
 /*General and Main Nav. Bar Formatting*/
 body {
   background-color: var(--mainpink);
@@ -161,7 +162,7 @@ footer a { /*footer links*/
   color: rgb(0, 0, 0);
   text-decoration: none;
   letter-spacing: 1px;
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
 }
 
@@ -228,7 +229,7 @@ h3 {
 }
 
 h4 {
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   color: var(--magenta);
   margin-right: 1.5%;
@@ -246,7 +247,7 @@ body img {
 }
 
 body figcaption {
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   color: rgb(0, 0, 0);
   font-style: italic;
@@ -260,7 +261,7 @@ body figcaption {
 
 /*Main General Formatting*/  
 main {
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   color: rgb(0, 0, 0);
   margin-right: 5%;
@@ -268,7 +269,7 @@ main {
 }
 
 main p {
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   color: rgb(0, 0, 0);
   margin-right: 5%;
@@ -287,7 +288,7 @@ footer {
 }
 
 footer p, .footercompany { /*copyright*/
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 10px;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -304,7 +305,7 @@ footer img {
   color: var(--raspberry);
   text-align: center;
   letter-spacing: 1.7px;
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -317,13 +318,13 @@ table {
 th { /*table headers*/
   background-color: var(--dustyrose);
   color: rgb(0, 0, 0);
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
 }
 
 th, td { /*table headers and data boxes*/
   border: 1.2px solid #000000;
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   padding: 6px;
   text-align: left;
@@ -341,7 +342,7 @@ tr:nth-child(odd) { /*alternating row colors*/
 
 /*HTML Form Formatting*/
 form {
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
   margin-right: 2%;
   margin-left: 2%;
@@ -353,7 +354,7 @@ form {
 }
 
 select { /*dropdown, select one*/
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   height: 26px; 
   width: 38%;
@@ -361,12 +362,12 @@ select { /*dropdown, select one*/
 }
 
 input::placeholder {
-  font-family: didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
 }
 
 .otherspec { /*text area under 'Main Reason...' */
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height:60px; 
   width: 45%;
   resize: vertical; 
@@ -375,7 +376,7 @@ input::placeholder {
 }
 
 .feedback { /*text area under 'Is there anything...'*/
-  font-family: Didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 120px; 
   width: 100%;
   resize: vertical; 
@@ -383,7 +384,7 @@ input::placeholder {
 }
 
 textarea {
-  font-family: didot;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height:100px;
   width: 60%;
 }
@@ -443,7 +444,7 @@ textarea {
   width: 100px;
   font-size: 16px;
   font-weight: 900;
-  font-family:  didot;
+  font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -459,7 +460,7 @@ textarea {
   width: 80px;
   font-size: 14px;
   font-weight: 900;
-  font-family:  didot;
+  font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -475,7 +476,7 @@ textarea {
   width: 100px;
   font-size: 14px;
   font-weight: 900;
-  font-family:  Didot;
+  font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -491,7 +492,7 @@ textarea {
   width: 150px;
   font-size: 14px;
   font-weight: 900;
-  font-family:  didot;
+  font-family:   'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -697,6 +698,81 @@ ol li {
   cursor: pointer;
 }
 
+
+/*Slides*/
+
+.slideshow-container{
+  width: 70%;
+  top: 70px;
+  margin:0% 25%;
+}
+.slideshow {
+  list-style-type: none;
+  width: 100%;
+  height: 500px;
+  position: relative;
+
+}
+.slideshow-item{
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position:absolute;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+.slideshow-item.active{
+  opacity: 1;
+  transition-delay: 0ms;
+}
+.slideshow-item > img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+
+}
+.slideshow-btn{
+  border:none;
+  background:var(--dullpastelpink);
+  font-size: 42px;
+  font-weight: 900;
+  color: white;
+  border-radius: 15%;
+  margin-bottom: 1%;
+  margin-top: -3%;
+  margin-left: 25%;
+}
+
+.slideshow-btn:hover{
+  cursor:pointer;
+  color:var(--magenta);
+}
+
+.slideshow-nav{
+  display:inline-flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.nav-item{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 30px;
+  width: 100px;
+  padding: .1%;
+  color:black;
+  background-color:rgba(255, 255, 255, 0.654);
+  border-radius: 15%;
+  transition: 300ms opacity ease-in-out;
+}
+.nav-item:hover{
+cursor: pointer;
+}
+.nav-item.active{
+  background-color:var(--dustyrose);
+}
 
 
 
