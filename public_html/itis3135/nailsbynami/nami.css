@@ -175,6 +175,13 @@ ul li {
     padding:.5%;
 }
 
+.appointment-form {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 18px;
+    margin-left: 5%;
+
+}
+
 .contact-form {
     font-family: "Arial Narrow", sans-serif;
     font-size: 18px;
@@ -182,6 +189,16 @@ ul li {
 }
 
 ::placeholder {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 18px;
+}
+
+option {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 18px;
+}
+
+select {
     font-family: "Arial Narrow", sans-serif;
     font-size: 18px;
 }
@@ -334,7 +351,7 @@ main {
 
   }
   .nav-item{
-    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Arial Narrow Bold", sans-serif;
     height: 25px;
     width: 30px;
     padding: .3%;
@@ -355,4 +372,64 @@ main {
   
 
 /*Color Pallete*/
+.color-picker {
+    font-family: "Arial Narrow Bold", sans-serif;
+    margin-left:5%;
+    padding:1%;
+}
 
+#disable {
+    background-color: var(--paledustyrose);
+    border: solid 2px var(--darkgray);
+    width:250px;
+    height:40px;
+    color: var(--darkgray);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Arial Narrow", sans-serif;
+    margin-top:15px;
+    border-radius: 15%;
+
+}
+
+#disable:hover{
+    background-color: var(--transwhite);
+    cursor: pointer;
+}
+
+#my-widget1 {
+    border-radius: 5%;
+    border-color: var(--logotext);
+    color: var(--logotext);
+    padding:1%;
+    font-weight: 900;
+}
+#my-widget2 {
+    border-radius: 5%;
+    border-color: var(--logotext);
+    color: var(--logotext);
+    padding:1%;
+    font-weight: 900;
+
+}
+#my-widget3 {
+    border-radius: 5%;
+    border-color: var(--logotext);
+    padding:1%;
+    color: var(--logotext);
+    font-weight: 900;
+
+}
+
+.comp-link {
+    background-color: transparent;
+    padding:.25%;
+    border-radius: 10%;
+    text-decoration: none;
+    color:var(--logotext);
+}
+
+
+.comp-link:hover {
+    background-color: var(--transwhite);
+}

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href ="nami.css">
 
 
-        <!--JQUERY PLUGIN SRC: https://jqueryui.com/widget/-->
+        <!--JQUERY PLUGIN SRC: https://jqueryui.com/widget/ -->
         <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
         <style>
@@ -185,15 +185,96 @@
            
             <div id="content">
                 <h2>Appointment Scheduling</h2>
-                <p>in construction</p>
 
-                <div>
-                    <div id="my-widget1">color me</div>
-                    <div id="my-widget2">color me</div>
-                    <div id="my-widget3">color me</div>
+                <h3>Prepare!</h3>
+                <p>Pick a color scheme <em>before</em> your appointment! Then, take a picture and show it to us when you come in!</p>
+                <p>To change a color, click on the specified box. When you are happy with the palette, you can lock or unlock the scheme, using the button below. Have fun! </p>
+                <div class="color-picker">
+                    <div id="my-widget1">main color</div>
+                    <div id="my-widget2">accent 1</div>
+                    <div id="my-widget3">accent 2</div>
                     <button id="disable">Lock/Unlock Palette</button>
-                    <button id="green">Go green</button>
-                  </div>
+                  </div><br><br>
+
+                  <h3>Book!</h3>
+                  <p>To book an appointment with us, please fill out the form below to the best of your ability. We 
+                    will be in contact shortly to determine the best time for an appointment.
+                  </p>
+                  <br><form class="appointment-form" action="blank" method="post">
+                    <p  style="margin-left: -3%; font-weight:600;; font-size: 22px;">Personal information:</p>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="name" required placeholder="Doe">
+                    <br>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="name" required placeholder="Jane"> <br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="name@email.com"><br><br>
+                  
+                    <p  style="margin-left: -3%; font-weight:600; font-size: 22px;">Preferred contact method:</p>
+                    <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                    <label for="contact_phone">Phone</label><br>
+                    <input type="radio" id="contact_email" name="contact_method" value="email">
+                    <label for="contact_email">Email</label><br>
+                    <input type="radio" id="contact_email" name="contact_method" value="email">
+                    <label for="contact_either">Either</label><br><br>
+                    
+                    <label for="service"  style="margin-left: -3%; font-weight:600; font-size: 22px;">Select service:</label><br>
+                    <select id="service" name="service">
+                        <option value="Basic Manicure">Basic Manicure</option>
+                        <option value="Basic Pedicure">Basic Pedicure</option>
+                        <option value="Gel Polish">Mani w/ Gel Polish</option>
+                        <option value="Gel Polish">Pedi w/ Gel Polish</option>
+                        <option value="Acrylic Full Set">Acrylic Full Set</option>
+                        <option value="Acrylic Fill In">Acrylic Fill In</option>
+                        <option value="Acrylic Soak Off">Acrylic Soak Off</option>
+                        <option value="Dip Powder">Mani w/ Dip Powder</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+
+                    <label for="technique"   style="margin-left: -3%; font-weight:600; font-size: 22px;">Select technique:</label><br>
+                    <select id="technique" name="technique">
+                        <option value="Nail Art">Nail Art</option>
+                        <option value="Ombre">Ombre</option>
+                        <option value="French Tips">French Tips</option>
+                        <option value="Gems/Charms">Gems/Charms</option>
+                        <option value="Encapsulation">Encapsulation</option>
+                        <option value="Other">Other</option>
+                    </select><br><br>
+
+                    <p style="margin-left: -3%; font-weight:600; font-size: 22px;">Select which day(s) work best for you:</p>
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="monday" name="days[]" value="Monday"><br>
+
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="tuesday" name="days[]" value="Tuesday"><br>
+
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="wednesday" name="days[]" value="Wednesday"><br>
+
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="thursday" name="days[]" value="Thursday"><br>
+
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" id="friday" name="days[]" value="Friday"><br>
+
+                    <label for="saturday">Saturday</label>
+                    <input type="checkbox" id="saturday" name="days[]" value="Saturday"><br>
+
+                    <label for="sunday">Sunday</label>
+                    <input type="checkbox" id="sunday" name="days[]" value="Sunday"><br><br>
+
+                    <label  style="margin-left: -3%; font-weight:600; font-size: 22px;" for="message">Other:</label><br>
+                    <textarea style="width:250px" id="message" name="message" rows="5" required placeholder="If you have anything else to let us know, please enter that here."></textarea>
+                    <br><br>
+                    <input style="margin-left:10%"class="submit-button"type="submit" value="Submit">
+                  </form><br><br>
+
+                  <h3>Confirm!</h3>
+                  <p>Thank you for booking with us! You should get a text message or email (depending on which contact method you prefer) in 12-24 hours! However, 
+                    if you <em>do not</em> hear from us after a day, please <a href="contact.html">contact us</a> as soon as possible.
+                  </p>
             </div>
 
             
@@ -206,7 +287,7 @@
         <br>
         <footer> 
             <!--Copyright and CSS+HTML Validation-->
-            <p class="createdby">Created by Wilson Enterprises © 2023</p>
+            <p class="createdby">Created by <a class="comp-link" href="https://webpages.charlotte.edu/kwils178/itis3135/wilsonenterprises/index.html" target="_blank">Wilson Enterprises</a> © 2023</p>
             <a class="validator" target="_blank" href="https://validator.w3.org/check?uri=referer">
                 <img style="border:0;width:42px;height:15px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413" alt="Valid HTML!">
             </a> 
