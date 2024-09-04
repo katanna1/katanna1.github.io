@@ -13,7 +13,7 @@
     <body>
         <!-- HEADER -->
         <header> 
-            <img class="logo" src="media/crpyticlogo.png">
+            <a href="index.html"><img class="logo" src="media/crpyticlogo.png"></a>
             <input type="text" class="headersearch" placeholder="Search..">
         </header>
         <nav class="nav">
@@ -29,15 +29,13 @@
 
         <!-- MAIN -->
             <main>
-                <div class="homepage">
-                    <h1> CYRPTIC JEWELRY</h1>
-                    <h2> the best source for alternative jewerly </h2>
-                    <br><h3><a href="items.html">SHOP NOW</a></h3>
-                </div>
-                <!-- The video -->
-                <video autoplay muted loop id="homePageVideo">
-                    <source src="media/skull.mp4" type="video/mp4">
-                </video>    
+                <h2>ITEMS PAGE</h2>
+                
+                <p> jfsdjjfsjkfsdjk
+                </p> 
+           
+
+        
             </main>
 
         <!-- FOOTER -->

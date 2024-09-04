@@ -74,6 +74,8 @@ header {
 .nav a:hover {
   background-color: var(--hovergray);
   border-radius: 15%;
+  box-shadow: 0 2px 8px rgba(223, 220, 220, 0.401);
+
 }
 
 .nav a:visited {
@@ -109,6 +111,7 @@ footer p {
 #homePageVideo {
   width: 115%;
   margin-left: -5%;
+  margin-top: 15%;
 }
 
 .homepage {
@@ -125,7 +128,7 @@ footer p {
 .homepage h1 {
   color: white;
   text-align: center;
-  font-size: 44px;
+  font-size: 50px;
   font-family: fantasy;
   letter-spacing: 5px;
 }
@@ -165,4 +168,44 @@ footer p {
 
 
 
- 
+ /*Try*/
+ .itemscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 5%;
+  justify-content: center;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  width: 270px; 
+  padding: 3%;
+  box-shadow: 0 4px 8px rgba(12, 0, 0, 0.678);
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.item:hover {
+  box-shadow: 0 12px 16px rgba(53, 4, 4, 0.613);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--darkred);
+}
+
+.condition, .price, .offers {
+  font-size: 14px;
+  margin: 5px 0;
+  color: black;
+}
