@@ -1,0 +1,330 @@
+/* Color Scheme */
+:root {
+  --darkred: #600a15;
+  --darkerred:#3f060e;
+  --charcoal: #403639;
+  --lightgray: #d7d6d6;
+  --forestgreen: #043f06;
+  --hovergray:rgba(234, 232, 232, 0.229);
+  /*   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   */
+}
+
+
+/* General styling */
+* {
+  margin: 0% 0%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  background-color: var(--lightgray);
+  margin-top: 2%;
+  padding-left: 1.5%;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: fantasy;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+/* Header/footer/nav */
+header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--darkred);
+  padding:1%;
+}
+
+.headersearch {
+  left: 55%;
+  padding: .5%;
+  top: 50px;
+  position:absolute;
+  width: 15%;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 5%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo {
+  height: 200%;
+  margin-left:-45px;
+  margin-top: -45px;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.479);
+  padding: 1.5%;
+  top: -1.5%;
+  right: 0%;
+  position:absolute;
+  width: 20%;
+  height: 14%;
+  border-left-style: double;
+  border-left-width: 15px;
+
+}
+
+.nav a {
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  font-variant: all-petite-caps;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  background-color: var(--hovergray);
+  border-radius: 15%;
+  box-shadow: 0 2px 8px rgba(223, 220, 220, 0.401);
+
+}
+
+.nav a:visited {
+  color: var(--lightgray);
+}
+
+footer {
+  position: sticky;
+  text-align: center;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 80px;
+  padding:1%;
+  background-color: rgba(88, 11, 11, 0.545);
+}
+
+footer p {
+  color:white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px; 
+  padding: .5%;
+  font-weight: 100;
+}
+
+.footer-socials {
+  width: 2%;
+  padding: .5%;
+}
+    
+
+/* Video stuff for home page */
+#homePageVideo {
+  width: 115%;
+  margin-left: -5%;
+  margin-top: 15%;
+}
+
+.homepage {
+  background-color: black;
+  position: absolute;
+  top: 16%;
+  left: 0%;
+  width: 100%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  z-index: 1;
+}
+
+.homepage h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: fantasy;
+  letter-spacing: 5px;
+}
+
+.homepage h2 {
+  color: var(--darkred);
+  text-align: center;
+  font-size: 20px;
+  font-family: fantasy;
+  letter-spacing: 3px;
+}
+
+.homepage h3 {
+  padding: 2%;
+  font-family: fantasy;
+  font-weight: 100;
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: 3px;
+}
+
+.homepage a {
+  border-style: solid;
+  border-radius: 10%;
+  padding: 1%;
+  text-decoration: none;
+  background-color: #3f060eab;
+  color: white;
+}
+
+.homepage a:hover{
+  background-color: var(--hovergray);
+  border-radius: 10%;
+}
+
+
+/* All item selection page */
+.itemscontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 3% 0%;
+  margin-top: -20px;
+  justify-content: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  width: 270px; 
+  padding: 3%;
+  box-shadow: 0 4px 8px rgba(12, 0, 0, 0.678);
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.item:hover {
+  box-shadow: 0 12px 16px rgba(53, 4, 4, 0.613);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--darkred);
+}
+
+.condition, .price, .offers {
+  font-size: 14px;
+  margin: 5px 0;
+  color: black;
+}
+
+
+/* Form stuff for adding new item */
+.form-container {
+  width: 60%;
+  margin-left: 18.5%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.726);
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+label {
+  display: block;
+  padding: 1.3%;
+  margin-left: -1%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid var(--darkerred);
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.new-button {
+  width: 25%;
+  padding: 2%;
+  background-color: var(--darkerred);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.new-button:hover {
+  background-color: rgba(61, 54, 54, 0.74);
+}
+
+#condition {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* More specific item details */
+.container {
+  display: flex;
+  margin: 0 18%;
+  max-width: 800px;
+  border: 2px solid var(--darkerred);
+  padding: 3%;
+  border-radius: 5%;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.image-column {
+  flex: 1;
+  padding-right: 25px;
+}
+
+.details-column {
+  flex: 2;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.item-image {
+  width: 100%;
+  height: auto;
+}
+
+.item-details {
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+.edit-button {
+  background-color: var(--forestgreen);
+}
+
+.delete-button {
+  background-color: var(--darkerred);
+}

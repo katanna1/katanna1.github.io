@@ -1,0 +1,84 @@
+
+<!-- TITLE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katrina Wilson ⚊ ITIS 4166 Project 1 Sell </title>
+        <link rel="stylesheet" href ="styles/p1.css">
+    </head>
+
+
+    <body>
+        <!-- HEADER -->
+        <header> 
+            <a href="index.html"><img class="logo" src="media/crpyticlogo.png"></a>
+            <input type="text" class="headersearch" placeholder="Search..">
+        </header>
+        <nav class="nav">
+            <a href="items.html">Browse</a><br>
+            <a href="new.html">Sell</a><br>
+            <a href="">Sign Up</a><br>
+            <a href="">Login</a><br>
+        </nav>
+      
+
+        <!-- MAIN -->
+            <main>
+                <h2>Sell at Cryptic Jewelry!</h2>
+                
+                <div class="form-container">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="condition">Condition:</label>
+                            <select id="condition" name="condition" required>
+                                <option value="" disabled selected>Select condition</option>
+                                <option value="new">New</option>
+                                <option value="like-new">Like New</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title" placeholder="Earrings, Necklace, etc." required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="seller">Seller:</label>
+                            <input type="text" id="seller" name="seller" placeholder="John Doe" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="price">Price:</label>
+                            <input type="number" id="price" name="price" min="0" step="0.01" placeholder="0.00" required>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="details">Details:</label>
+                            <textarea id="details" name="details" rows="4" required placeholder="Description of the item."></textarea>
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="image">Image:</label>
+                            <input type="file" id="image" name="image" accept="image/*" required>
+                        </div>
+                
+                        <button type="submit" class="new-button">Submit</button>
+                    </form>
+                </div>
+            </main>
+
+        <!-- FOOTER -->
+        <footer> 
+            <p>Copyright © 2024 Katrina Wilson</p>
+            <img class="footer-socials" src="media/insta.png" alt="Intagram icon">
+            <img class="footer-socials" src="media/twitter.png" alt="Twitter icon">
+            <img class="footer-socials" src="media/facebook.png" alt="Facebook icon">
+        </footer>
+    </body>
+</html>
+
